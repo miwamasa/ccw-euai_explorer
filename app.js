@@ -189,7 +189,7 @@ function renderArticleDetail() {
                 <span class="meta-badge">スライド: ${article.slide_pages.join(', ')}</span>
             </div>
             <div class="detail-actions">
-                <button class="btn btn-primary" onclick="toggleEditMode()">${editMode ? '表示モード' : '編集モード'}</button>
+                <button class="btn btn-primary" onclick="toggleEditMode()">${editMode ? '保存して終了' : '編集モード'}</button>
                 <button class="btn btn-danger" onclick="deleteArticle()">削除</button>
             </div>
         </div>
@@ -213,35 +213,16 @@ function renderArticleDetail() {
         </div>
 
         <div class="detail-section">
-            <h3>要件 (${article.requirements.length}件)</h3>
-            ${renderRequirements(article.requirements)}
+            <h3>要件 (${article.requirements.length}件)
+                ${editMode ? '<button class="btn btn-info btn-sm" onclick="addRequirement()" style="margin-left: 1rem; font-size: 0.8rem;">要件追加</button>' : ''}
+            </h3>
+            <div id="requirementsContainer">
+                ${renderRequirements(article.requirements)}
+            </div>
         </div>
 
-        ${article.related_articles.length > 0 ? `
-            <div class="detail-section">
-                <h3>関連条文</h3>
-                <div>
-                    ${article.related_articles.map(rel => `
-                        <span class="related-item" onclick="navigateToArticle('${rel.article_id}')">
-                            ${rel.article_number}: ${rel.description}
-                        </span>
-                    `).join('')}
-                </div>
-            </div>
-        ` : ''}
-
-        ${article.related_recitals.length > 0 ? `
-            <div class="detail-section">
-                <h3>関連前文</h3>
-                <div>
-                    ${article.related_recitals.map(rec => `
-                        <div style="padding: 0.5rem; background: #f9f9f9; margin-bottom: 0.5rem; border-radius: 4px;">
-                            <strong>${rec.recital_number}:</strong> ${rec.summary_ja}
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-        ` : ''}
+        ${renderRelatedArticles(article.related_articles)}
+        ${renderRelatedRecitals(article.related_recitals)}
 
         ${article.related_annexes.length > 0 ? `
             <div class="detail-section">
@@ -290,49 +271,337 @@ function renderRequirements(requirements) {
         return '<p style="color: #999;">要件なし</p>';
     }
 
-    return requirements.map(req => `
-        <div class="requirement-item">
-            <div class="requirement-header">${req.req_id}: ${req.type}</div>
-            <div class="requirement-description">
-                <strong>日本語:</strong> ${req.description_ja}<br>
-                <strong>English:</strong> ${req.description_en}
-            </div>
-            ${req.sub_items && req.sub_items.length > 0 ? `
-                <div style="margin-left: 1rem; margin-top: 0.5rem;">
-                    <strong>サブ項目:</strong>
-                    <ul style="margin-top: 0.3rem;">
-                        ${req.sub_items.map(sub => `
-                            <li>${sub.description_ja}</li>
-                        `).join('')}
-                    </ul>
+    return requirements.map((req, index) => {
+        if (editMode) {
+            return `
+                <div class="requirement-item editable" style="background-color: #fffef7;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                        <strong style="color: #8e44ad;">要件 #${index + 1}</strong>
+                        <button class="btn btn-danger btn-sm" onclick="deleteRequirement(${index})" style="font-size: 0.75rem; padding: 0.3rem 0.6rem;">削除</button>
+                    </div>
+                    <div class="input-group">
+                        <label>要件ID:</label>
+                        <input type="text" id="req_id_${index}" value="${req.req_id}" />
+                    </div>
+                    <div class="input-group">
+                        <label>タイプ:</label>
+                        <select id="req_type_${index}">
+                            <option value="mandatory" ${req.type === 'mandatory' ? 'selected' : ''}>mandatory</option>
+                            <option value="conditional" ${req.type === 'conditional' ? 'selected' : ''}>conditional</option>
+                            <option value="recommendation" ${req.type === 'recommendation' ? 'selected' : ''}>recommendation</option>
+                            <option value="prohibition" ${req.type === 'prohibition' ? 'selected' : ''}>prohibition</option>
+                            <option value="definition" ${req.type === 'definition' ? 'selected' : ''}>definition</option>
+                            <option value="scope_definition" ${req.type === 'scope_definition' ? 'selected' : ''}>scope_definition</option>
+                            <option value="consideration" ${req.type === 'consideration' ? 'selected' : ''}>consideration</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>説明（日本語）:</label>
+                        <textarea id="req_desc_ja_${index}" rows="2">${req.description_ja}</textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>説明（English）:</label>
+                        <textarea id="req_desc_en_${index}" rows="2">${req.description_en}</textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>条件:</label>
+                        <input type="text" id="req_conditions_${index}" value="${req.conditions || ''}" />
+                    </div>
+                    <div class="input-group">
+                        <label>検証方法:</label>
+                        <input type="text" id="req_verification_${index}" value="${req.verification_method || ''}" />
+                    </div>
+                    <div class="input-group">
+                        <label>責任者:</label>
+                        <input type="text" id="req_responsible_${index}" value="${req.responsible_party || ''}" />
+                    </div>
                 </div>
-            ` : ''}
-            <div class="requirement-meta">
-                ${req.conditions ? `条件: ${req.conditions} | ` : ''}
-                ${req.verification_method ? `検証方法: ${req.verification_method} | ` : ''}
-                ${req.responsible_party ? `責任者: ${req.responsible_party}` : ''}
+            `;
+        } else {
+            return `
+                <div class="requirement-item">
+                    <div class="requirement-header">${req.req_id}: ${req.type}</div>
+                    <div class="requirement-description">
+                        <strong>日本語:</strong> ${req.description_ja}<br>
+                        <strong>English:</strong> ${req.description_en}
+                    </div>
+                    ${req.sub_items && req.sub_items.length > 0 ? `
+                        <div style="margin-left: 1rem; margin-top: 0.5rem;">
+                            <strong>サブ項目:</strong>
+                            <ul style="margin-top: 0.3rem;">
+                                ${req.sub_items.map(sub => `
+                                    <li>${sub.description_ja}</li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    <div class="requirement-meta">
+                        ${req.conditions ? `条件: ${req.conditions} | ` : ''}
+                        ${req.verification_method ? `検証方法: ${req.verification_method} | ` : ''}
+                        ${req.responsible_party ? `責任者: ${req.responsible_party}` : ''}
+                    </div>
+                </div>
+            `;
+        }
+    }).join('');
+}
+
+function renderRelatedArticles(relatedArticles) {
+    if (editMode) {
+        return `
+            <div class="detail-section">
+                <h3>関連条文 (${relatedArticles.length}件)
+                    <button class="btn btn-info btn-sm" onclick="addRelatedArticle()" style="margin-left: 1rem; font-size: 0.8rem;">関連条文追加</button>
+                </h3>
+                <div id="relatedArticlesContainer">
+                    ${relatedArticles.map((rel, index) => `
+                        <div class="requirement-item editable" style="background-color: #e8f4f8;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <strong>関連条文 #${index + 1}</strong>
+                                <button class="btn btn-danger btn-sm" onclick="deleteRelatedArticle(${index})" style="font-size: 0.75rem; padding: 0.3rem 0.6rem;">削除</button>
+                            </div>
+                            <div class="input-group">
+                                <label>条文ID:</label>
+                                <input type="text" id="rel_art_id_${index}" value="${rel.article_id}" />
+                            </div>
+                            <div class="input-group">
+                                <label>条文番号:</label>
+                                <input type="text" id="rel_art_number_${index}" value="${rel.article_number}" />
+                            </div>
+                            <div class="input-group">
+                                <label>関係性:</label>
+                                <select id="rel_art_type_${index}">
+                                    <option value="references" ${rel.relation_type === 'references' ? 'selected' : ''}>references</option>
+                                    <option value="prerequisite" ${rel.relation_type === 'prerequisite' ? 'selected' : ''}>prerequisite</option>
+                                    <option value="related" ${rel.relation_type === 'related' ? 'selected' : ''}>related</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>説明:</label>
+                                <input type="text" id="rel_art_desc_${index}" value="${rel.description}" />
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
             </div>
-        </div>
-    `).join('');
+        `;
+    } else if (relatedArticles.length > 0) {
+        return `
+            <div class="detail-section">
+                <h3>関連条文</h3>
+                <div>
+                    ${relatedArticles.map(rel => `
+                        <span class="related-item" onclick="navigateToArticle('${rel.article_id}')">
+                            ${rel.article_number}: ${rel.description}
+                        </span>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    }
+    return '';
+}
+
+function renderRelatedRecitals(relatedRecitals) {
+    if (editMode) {
+        return `
+            <div class="detail-section">
+                <h3>関連前文 (${relatedRecitals.length}件)
+                    <button class="btn btn-info btn-sm" onclick="addRelatedRecital()" style="margin-left: 1rem; font-size: 0.8rem;">関連前文追加</button>
+                </h3>
+                <div id="relatedRecitalsContainer">
+                    ${relatedRecitals.map((rec, index) => `
+                        <div class="requirement-item editable" style="background-color: #fef5e7;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <strong>関連前文 #${index + 1}</strong>
+                                <button class="btn btn-danger btn-sm" onclick="deleteRelatedRecital(${index})" style="font-size: 0.75rem; padding: 0.3rem 0.6rem;">削除</button>
+                            </div>
+                            <div class="input-group">
+                                <label>前文番号:</label>
+                                <input type="text" id="rel_rec_number_${index}" value="${rec.recital_number}" />
+                            </div>
+                            <div class="input-group">
+                                <label>要約（日本語）:</label>
+                                <textarea id="rel_rec_summary_ja_${index}" rows="2">${rec.summary_ja}</textarea>
+                            </div>
+                            <div class="input-group">
+                                <label>要約（English）:</label>
+                                <textarea id="rel_rec_summary_en_${index}" rows="2">${rec.summary_en}</textarea>
+                            </div>
+                            <div class="input-group">
+                                <label>関連性:</label>
+                                <input type="text" id="rel_rec_relevance_${index}" value="${rec.relevance}" />
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    } else if (relatedRecitals.length > 0) {
+        return `
+            <div class="detail-section">
+                <h3>関連前文</h3>
+                <div>
+                    ${relatedRecitals.map(rec => `
+                        <div style="padding: 0.5rem; background: #f9f9f9; margin-bottom: 0.5rem; border-radius: 4px;">
+                            <strong>${rec.recital_number}:</strong> ${rec.summary_ja}
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    }
+    return '';
 }
 
 function toggleEditMode() {
-    editMode = !editMode;
-
-    if (!editMode && currentArticle) {
+    if (editMode) {
         // Save changes
-        const textJa = document.getElementById('text_ja');
-        const textEn = document.getElementById('text_en');
+        saveArticleChanges();
+        editMode = false;
+    } else {
+        editMode = true;
+    }
+    renderArticleDetail();
+}
 
-        if (textJa && textEn) {
-            currentArticle.article_text.ja = textJa.value;
-            currentArticle.article_text.en = textEn.value;
-            currentArticle.metadata.updated_at = new Date().toISOString();
-            showNotification('変更を保存しました', 'success');
-        }
+function saveArticleChanges() {
+    if (!currentArticle) return;
+
+    // Save article text
+    const textJa = document.getElementById('text_ja');
+    const textEn = document.getElementById('text_en');
+    if (textJa && textEn) {
+        currentArticle.article_text.ja = textJa.value;
+        currentArticle.article_text.en = textEn.value;
     }
 
+    // Save requirements
+    const newRequirements = [];
+    for (let i = 0; i < currentArticle.requirements.length; i++) {
+        const reqId = document.getElementById(`req_id_${i}`);
+        if (reqId) {
+            newRequirements.push({
+                req_id: reqId.value,
+                type: document.getElementById(`req_type_${i}`).value,
+                description_ja: document.getElementById(`req_desc_ja_${i}`).value,
+                description_en: document.getElementById(`req_desc_en_${i}`).value,
+                sub_items: currentArticle.requirements[i].sub_items || [],
+                conditions: document.getElementById(`req_conditions_${i}`).value,
+                verification_method: document.getElementById(`req_verification_${i}`).value,
+                responsible_party: document.getElementById(`req_responsible_${i}`).value
+            });
+        }
+    }
+    currentArticle.requirements = newRequirements;
+
+    // Save related articles
+    const newRelatedArticles = [];
+    for (let i = 0; i < currentArticle.related_articles.length; i++) {
+        const relArtId = document.getElementById(`rel_art_id_${i}`);
+        if (relArtId) {
+            newRelatedArticles.push({
+                article_id: relArtId.value,
+                article_number: document.getElementById(`rel_art_number_${i}`).value,
+                relation_type: document.getElementById(`rel_art_type_${i}`).value,
+                description: document.getElementById(`rel_art_desc_${i}`).value
+            });
+        }
+    }
+    currentArticle.related_articles = newRelatedArticles;
+
+    // Save related recitals
+    const newRelatedRecitals = [];
+    for (let i = 0; i < currentArticle.related_recitals.length; i++) {
+        const relRecNumber = document.getElementById(`rel_rec_number_${i}`);
+        if (relRecNumber) {
+            newRelatedRecitals.push({
+                recital_number: relRecNumber.value,
+                summary_ja: document.getElementById(`rel_rec_summary_ja_${i}`).value,
+                summary_en: document.getElementById(`rel_rec_summary_en_${i}`).value,
+                relevance: document.getElementById(`rel_rec_relevance_${i}`).value
+            });
+        }
+    }
+    currentArticle.related_recitals = newRelatedRecitals;
+
+    // Update metadata
+    currentArticle.metadata.updated_at = new Date().toISOString();
+
+    showNotification('変更を保存しました', 'success');
+}
+
+// Add/Delete functions for requirements
+function addRequirement() {
+    if (!currentArticle) return;
+
+    currentArticle.requirements.push({
+        req_id: `new_req_${Date.now()}`,
+        type: 'mandatory',
+        description_ja: '新しい要件',
+        description_en: 'New requirement',
+        sub_items: [],
+        conditions: '',
+        verification_method: '',
+        responsible_party: ''
+    });
+
     renderArticleDetail();
+}
+
+function deleteRequirement(index) {
+    if (!currentArticle) return;
+
+    if (confirm('この要件を削除してもよろしいですか?')) {
+        currentArticle.requirements.splice(index, 1);
+        renderArticleDetail();
+    }
+}
+
+// Add/Delete functions for related articles
+function addRelatedArticle() {
+    if (!currentArticle) return;
+
+    currentArticle.related_articles.push({
+        article_id: 'article_x',
+        article_number: 'X条',
+        relation_type: 'related',
+        description: '新しい関連条文'
+    });
+
+    renderArticleDetail();
+}
+
+function deleteRelatedArticle(index) {
+    if (!currentArticle) return;
+
+    if (confirm('この関連条文を削除してもよろしいですか?')) {
+        currentArticle.related_articles.splice(index, 1);
+        renderArticleDetail();
+    }
+}
+
+// Add/Delete functions for related recitals
+function addRelatedRecital() {
+    if (!currentArticle) return;
+
+    currentArticle.related_recitals.push({
+        recital_number: '前文X',
+        summary_ja: '新しい関連前文',
+        summary_en: 'New related recital',
+        relevance: '関連性の説明'
+    });
+
+    renderArticleDetail();
+}
+
+function deleteRelatedRecital(index) {
+    if (!currentArticle) return;
+
+    if (confirm('この関連前文を削除してもよろしいですか?')) {
+        currentArticle.related_recitals.splice(index, 1);
+        renderArticleDetail();
+    }
 }
 
 function deleteArticle() {
@@ -650,6 +919,10 @@ style.textContent = `
             transform: translateX(400px);
             opacity: 0;
         }
+    }
+    .btn-sm {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
     }
 `;
 document.head.appendChild(style);
