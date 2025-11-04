@@ -691,36 +691,48 @@ function generateSlides() {
 
     // Generate slides for each article
     appData.articles.forEach(article => {
+        // Skip articles with missing data
+        if (!article || !article.article_number || !article.title_ja) {
+            console.warn('Skipping article with missing data:', article);
+            return;
+        }
+
         // Title slide
         slides.push({
             title: `${article.article_number}: ${article.title_ja}`,
             content: `
                 <h2>${article.article_number}: ${article.title_ja}</h2>
-                <h3 style="color: #7f8c8d; font-style: italic;">${article.title_en}</h3>
+                <h3 style="color: #7f8c8d; font-style: italic;">${article.title_en || ''}</h3>
                 <div style="margin-top: 2rem;">
-                    <p><strong>カテゴリ:</strong> ${getCategoryLabel(article.category)}</p>
-                    <p><strong>リスクレベル:</strong> ${getRiskLabel(article.risk_level)}</p>
-                    <p><strong>スライドページ:</strong> ${article.slide_pages.join(', ')}</p>
+                    <p><strong>カテゴリ:</strong> ${getCategoryLabel(article.category || 'general')}</p>
+                    <p><strong>リスクレベル:</strong> ${getRiskLabel(article.risk_level || 'general')}</p>
+                    <p><strong>スライドページ:</strong> ${(article.slide_pages || []).join(', ')}</p>
                 </div>
             `
         });
 
-        // Content slide
-        slides.push({
-            title: `${article.article_number}: 条文本文`,
-            content: `
-                <h2>${article.article_number}: 条文本文</h2>
-                <div style="margin-top: 2rem;">
-                    <h3>日本語</h3>
-                    <p style="padding: 1rem; background: #f9f9f9; border-radius: 4px;">${article.article_text.ja}</p>
-                    <h3 style="margin-top: 1rem;">English</h3>
-                    <p style="padding: 1rem; background: #f9f9f9; border-radius: 4px;">${article.article_text.en}</p>
-                </div>
-            `
-        });
+        // Content slide - only if article text exists
+        if (article.article_text && (article.article_text.ja || article.article_text.en)) {
+            slides.push({
+                title: `${article.article_number}: 条文本文`,
+                content: `
+                    <h2>${article.article_number}: 条文本文</h2>
+                    <div style="margin-top: 2rem;">
+                        ${article.article_text.ja ? `
+                            <h3>日本語</h3>
+                            <p style="padding: 1rem; background: #f9f9f9; border-radius: 4px;">${article.article_text.ja}</p>
+                        ` : ''}
+                        ${article.article_text.en ? `
+                            <h3 style="margin-top: 1rem;">English</h3>
+                            <p style="padding: 1rem; background: #f9f9f9; border-radius: 4px;">${article.article_text.en}</p>
+                        ` : ''}
+                    </div>
+                `
+            });
+        }
 
         // Requirements slide
-        if (article.requirements.length > 0) {
+        if (article.requirements && article.requirements.length > 0) {
             slides.push({
                 title: `${article.article_number}: 要件`,
                 content: `
@@ -728,7 +740,7 @@ function generateSlides() {
                     <div style="margin-top: 1rem;">
                         ${article.requirements.slice(0, 3).map(req => `
                             <div style="padding: 1rem; background: #fafafa; margin-bottom: 1rem; border-left: 4px solid #9b59b6; border-radius: 4px;">
-                                <strong>${req.req_id}:</strong> ${req.description_ja}
+                                <strong>${req.req_id || 'N/A'}:</strong> ${req.description_ja || req.description_en || 'No description'}
                             </div>
                         `).join('')}
                         ${article.requirements.length > 3 ? `<p style="color: #999; text-align: center;">... 他 ${article.requirements.length - 3}件</p>` : ''}
