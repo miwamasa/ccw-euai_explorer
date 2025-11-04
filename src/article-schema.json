@@ -1,0 +1,428 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/eu-ai-act-article.schema.json",
+  "title": "EU AI Act Article",
+  "description": "欧州AI法の条文データ構造のJSON Schema",
+  "type": "object",
+  "required": [
+    "article_id",
+    "article_number",
+    "section_id",
+    "title_ja",
+    "title_en",
+    "slide_pages",
+    "category",
+    "risk_level",
+    "requirements",
+    "related_articles",
+    "related_recitals",
+    "related_annexes",
+    "notes",
+    "visual_elements",
+    "metadata"
+  ],
+  "properties": {
+    "article_id": {
+      "type": "string",
+      "pattern": "^article_[0-9a-z_]+$",
+      "description": "条文ID (例: article_9, article_3_1)"
+    },
+    "article_number": {
+      "type": "string",
+      "pattern": "^[0-9]+条$",
+      "description": "条文番号 (例: 9条)"
+    },
+    "section_id": {
+      "type": "string",
+      "pattern": "^[0-9]+-[0-9]+$",
+      "description": "セクションID (例: 3-1)"
+    },
+    "title_ja": {
+      "type": "string",
+      "minLength": 1,
+      "description": "日本語タイトル"
+    },
+    "title_en": {
+      "type": "string",
+      "minLength": 1,
+      "description": "英語タイトル"
+    },
+    "slide_pages": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "minItems": 1,
+      "description": "対応スライドページ番号の配列"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "definition",
+        "scope",
+        "prohibition",
+        "classification",
+        "obligation_provider",
+        "obligation_deployer",
+        "quality_management",
+        "conformity_assessment",
+        "transparency",
+        "testing",
+        "monitoring",
+        "gpai"
+      ],
+      "description": "条文カテゴリ"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "prohibited",
+        "high-risk",
+        "gpai",
+        "gpai_systemic",
+        "limited-risk",
+        "minimal-risk",
+        "general"
+      ],
+      "description": "関連するリスクレベル"
+    },
+    "article_text": {
+      "type": "object",
+      "properties": {
+        "ja": {
+          "type": "string",
+          "description": "日本語条文"
+        },
+        "en": {
+          "type": "string",
+          "description": "英語条文"
+        }
+      },
+      "required": ["ja", "en"]
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/requirement"
+      },
+      "description": "要件リスト"
+    },
+    "related_articles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/relatedArticle"
+      },
+      "description": "関連条文"
+    },
+    "related_recitals": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/relatedRecital"
+      },
+      "description": "関連前文"
+    },
+    "related_annexes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/relatedAnnex"
+      },
+      "description": "関連付属書"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/note"
+      },
+      "description": "注釈・補足説明"
+    },
+    "visual_elements": {
+      "$ref": "#/definitions/visualElements",
+      "description": "ビジュアル要素"
+    },
+    "metadata": {
+      "$ref": "#/definitions/metadata",
+      "description": "メタデータ"
+    }
+  },
+  "definitions": {
+    "requirement": {
+      "type": "object",
+      "required": [
+        "req_id",
+        "type",
+        "description_ja",
+        "description_en",
+        "sub_items",
+        "conditions",
+        "verification_method",
+        "responsible_party"
+      ],
+      "properties": {
+        "req_id": {
+          "type": "string",
+          "description": "要件ID"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "mandatory",
+            "conditional",
+            "recommendation",
+            "prohibition",
+            "definition",
+            "scope_definition",
+            "consideration"
+          ],
+          "description": "要件タイプ"
+        },
+        "description_ja": {
+          "type": "string",
+          "description": "日本語説明"
+        },
+        "description_en": {
+          "type": "string",
+          "description": "英語説明"
+        },
+        "sub_items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/subItem"
+          },
+          "description": "サブ項目"
+        },
+        "conditions": {
+          "type": "string",
+          "description": "適用条件"
+        },
+        "verification_method": {
+          "type": "string",
+          "description": "検証方法"
+        },
+        "responsible_party": {
+          "type": "string",
+          "description": "責任者"
+        }
+      }
+    },
+    "subItem": {
+      "type": "object",
+      "required": ["item_id", "description_ja", "description_en"],
+      "properties": {
+        "item_id": {
+          "type": "string"
+        },
+        "description_ja": {
+          "type": "string"
+        },
+        "description_en": {
+          "type": "string"
+        }
+      }
+    },
+    "relatedArticle": {
+      "type": "object",
+      "required": [
+        "article_id",
+        "article_number",
+        "relation_type",
+        "description"
+      ],
+      "properties": {
+        "article_id": {
+          "type": "string"
+        },
+        "article_number": {
+          "type": "string"
+        },
+        "relation_type": {
+          "type": "string",
+          "enum": [
+            "references",
+            "prerequisite",
+            "related",
+            "uses_definition",
+            "implements"
+          ]
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "relatedRecital": {
+      "type": "object",
+      "required": [
+        "recital_number",
+        "summary_ja",
+        "summary_en",
+        "relevance"
+      ],
+      "properties": {
+        "recital_number": {
+          "type": "string"
+        },
+        "summary_ja": {
+          "type": "string"
+        },
+        "summary_en": {
+          "type": "string"
+        },
+        "relevance": {
+          "type": "string"
+        }
+      }
+    },
+    "relatedAnnex": {
+      "type": "object",
+      "required": [
+        "annex_id",
+        "section",
+        "title_ja",
+        "title_en",
+        "description",
+        "items"
+      ],
+      "properties": {
+        "annex_id": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "title_ja": {
+          "type": "string"
+        },
+        "title_en": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "note": {
+      "type": "object",
+      "required": [
+        "note_id",
+        "type",
+        "content_ja",
+        "content_en",
+        "position"
+      ],
+      "properties": {
+        "note_id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["explanation", "reference", "caution", "example"]
+        },
+        "content_ja": {
+          "type": "string"
+        },
+        "content_en": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        }
+      }
+    },
+    "visualElements": {
+      "type": "object",
+      "required": [
+        "has_flowchart",
+        "has_diagram",
+        "has_table",
+        "elements"
+      ],
+      "properties": {
+        "has_flowchart": {
+          "type": "boolean"
+        },
+        "has_diagram": {
+          "type": "boolean"
+        },
+        "has_table": {
+          "type": "boolean"
+        },
+        "elements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/visualElement"
+          }
+        }
+      }
+    },
+    "visualElement": {
+      "type": "object",
+      "required": ["type", "description", "data"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["flowchart", "table", "diagram", "graph"]
+        },
+        "description": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object"
+        },
+        "image_path": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "created_at",
+        "updated_at",
+        "version",
+        "author",
+        "status",
+        "tags",
+        "comments"
+      ],
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "version": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "reviewed", "approved", "published"]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "comments": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

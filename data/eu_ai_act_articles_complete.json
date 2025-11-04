@@ -1,0 +1,2259 @@
+{
+  "schema_version": "1.0",
+  "description": "欧州AI法 P23～P70の全条文データ",
+  "created_at": "2025-11-04T13:59:51.597357",
+  "articles": [
+    {
+      "article_id": "article_1",
+      "article_number": "1条",
+      "section_id": "3-2",
+      "title_ja": "目的と範囲",
+      "title_en": "Subject Matter",
+      "slide_pages": [
+        30
+      ],
+      "category": "scope",
+      "risk_level": "general",
+      "article_text": {
+        "ja": "AIシステムの及ぼす、健康、安全、基本的権利、民主主義、順法、環境保護に対する悪影響からの保護とイノベーションを両立するために、人間中心で信頼できるAIを促進するための規則",
+        "en": "Rules to promote human-centric and trustworthy AI to ensure protection against adverse impacts on health, safety, fundamental rights, democracy, rule of law and environmental protection"
+      },
+      "requirements": [
+        {
+          "req_id": "1-a",
+          "type": "scope_definition",
+          "description_ja": "EUでのAIシステムの投入と利用に関する、ハーモナイズした一連のルール",
+          "description_en": "Harmonized rules on the placing on the market and use of AI systems in the EU",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "",
+          "responsible_party": ""
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_2",
+          "article_number": "2条",
+          "relation_type": "related",
+          "description": "適用範囲の詳細"
+        },
+        {
+          "article_id": "article_5",
+          "article_number": "5条",
+          "relation_type": "references",
+          "description": "禁止されるAI"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:57:47.219687",
+        "updated_at": "2025-11-04T13:57:47.219698",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "目的",
+          "範囲",
+          "基本原則"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_2",
+      "article_number": "2条",
+      "section_id": "3-2",
+      "title_ja": "適用範囲",
+      "title_en": "Scope",
+      "slide_pages": [
+        31
+      ],
+      "category": "scope",
+      "risk_level": "general",
+      "article_text": {
+        "ja": "本規則は、以下に適用される",
+        "en": "This Regulation applies to"
+      },
+      "requirements": [
+        {
+          "req_id": "2-a",
+          "type": "scope_definition",
+          "description_ja": "Provider、deployerがEU域内でのAIシステム・サービス・GPAIモデルを提供する場合",
+          "description_en": "Providers and deployers of AI systems and GPAI models within the EU",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "",
+          "responsible_party": "provider, deployer"
+        },
+        {
+          "req_id": "2-c",
+          "type": "scope_definition",
+          "description_ja": "EU域外で事業を行うprovider/developerであるが、AIの出力をEU域内で使う場合",
+          "description_en": "Providers outside EU whose AI output is used within the EU",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_1",
+          "article_number": "1条",
+          "relation_type": "related",
+          "description": "本規則の目的"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:57:47.219702",
+        "updated_at": "2025-11-04T13:57:47.219703",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "適用範囲",
+          "Scope"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_3",
+      "article_number": "3条",
+      "section_id": "3-1",
+      "title_ja": "定義",
+      "title_en": "Definitions",
+      "slide_pages": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "category": "definition",
+      "risk_level": "general",
+      "article_text": {
+        "ja": "本規則において、以下の定義を適用する",
+        "en": "For the purposes of this Regulation, the following definitions apply"
+      },
+      "requirements": [
+        {
+          "req_id": "3-1",
+          "type": "definition",
+          "description_ja": "AIシステムの定義",
+          "description_en": "AI System definition",
+          "sub_items": [
+            {
+              "item_id": "3-1-detail",
+              "description_ja": "さまざまなレベルの自律性で動作するように設計され、配備後に適応性を示す可能性があり、明示的または暗黙的な目的のために、物理的または仮想的な環境に影響を与えることができる予測、コンテンツ、推奨、または決定などの出力を生成する方法を、受け取った入力から推測する機械ベースのシステム",
+              "description_en": "A machine-based system designed to operate with varying levels of autonomy..."
+            }
+          ],
+          "conditions": "",
+          "verification_method": "",
+          "responsible_party": ""
+        }
+      ],
+      "related_articles": [],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2024-10-27T00:00:00Z",
+        "updated_at": "2024-10-27T00:00:00Z",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "定義"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_4",
+      "article_number": "4条",
+      "section_id": "3-4",
+      "title_ja": "AIリテラシー",
+      "title_en": "AI Literacy",
+      "slide_pages": [
+        41
+      ],
+      "category": "obligation_provider",
+      "risk_level": "general",
+      "article_text": {
+        "ja": "AIシステムの提供者と配備者は、スタッフやAIシステムの運用・使用に関わる他の人々に十分なレベルのAIリテラシーを確保するための措置を講じなければならない",
+        "en": "Providers and deployers of AI systems shall take measures to ensure a sufficient level of AI literacy of their staff and other persons dealing with the operation and use of AI systems"
+      },
+      "requirements": [
+        {
+          "req_id": "4-1",
+          "type": "mandatory",
+          "description_ja": "スタッフに十分なレベルのAIリテラシーを確保",
+          "description_en": "Ensure sufficient level of AI literacy of staff",
+          "sub_items": [],
+          "conditions": "AIシステムの提供者・配備者に適用",
+          "verification_method": "トレーニング記録、理解度評価",
+          "responsible_party": "provider, deployer"
+        }
+      ],
+      "related_articles": [],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [
+        {
+          "note_id": "note_4_1",
+          "type": "explanation",
+          "content_ja": "AIリテラシーとは、プロバイダー、配備者、影響を受ける人々が、本規則の文脈における権利と義務を考慮して、適切にAIシステムを解釈し使用できるようにするスキル、知識、理解を意味する",
+          "content_en": "AI literacy means skills, knowledge and understanding that allow providers, deployers and affected persons to make an informed deployment of AI systems",
+          "position": "全体"
+        }
+      ],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:57:47.219707",
+        "updated_at": "2025-11-04T13:57:47.219708",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "AIリテラシー",
+          "教育",
+          "トレーニング"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_5",
+      "article_number": "5条",
+      "section_id": "3-2",
+      "title_ja": "禁止されるAI",
+      "title_en": "Prohibited Artificial Intelligence Practices",
+      "slide_pages": [
+        32
+      ],
+      "category": "prohibition",
+      "risk_level": "prohibited",
+      "requirements": [
+        {
+          "req_id": "5-1-a",
+          "type": "prohibition",
+          "description_ja": "サブリミナルな手法に関するAI",
+          "description_en": "AI systems that deploy subliminal techniques",
+          "sub_items": [],
+          "conditions": "EU域内での提供・使用",
+          "verification_method": "システム機能レビュー",
+          "responsible_party": "provider, deployer"
+        }
+      ],
+      "related_articles": [],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2024-10-27T00:00:00Z",
+        "updated_at": "2024-10-27T00:00:00Z",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "禁止"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_6",
+      "article_number": "6条",
+      "section_id": "3-2",
+      "title_ja": "高リスクAIシステムの分類",
+      "title_en": "Classification Rules for High-Risk AI Systems",
+      "slide_pages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "category": "classification",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "Annex Iに関し以下の条件を両方満たすものが高リスクAIシステムである",
+        "en": "High-risk AI systems are those that meet both conditions related to Annex I"
+      },
+      "requirements": [
+        {
+          "req_id": "6-1-a",
+          "type": "definition",
+          "description_ja": "Annex I記載のEU整合法令のいづれかの対象となる製品の安全部品として使われるAIシステム、あるいはAIシステム自体が製品であるようなAIシステム",
+          "description_en": "AI system as a safety component of a product covered by Union harmonization legislation listed in Annex I",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "6-1-b",
+          "type": "definition",
+          "description_ja": "Annex I記載の整合法令が要求する第三者適合アセスメントが必要な製品",
+          "description_en": "Product requiring third-party conformity assessment under Union harmonization legislation",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "6-2",
+          "type": "definition",
+          "description_ja": "Annex IIIに列挙されている分野で使用されるAIシステム",
+          "description_en": "AI systems referred to in Annex III",
+          "sub_items": [
+            {
+              "item_id": "6-2-biometric",
+              "description_ja": "生体認証システム",
+              "description_en": "Biometric systems"
+            },
+            {
+              "item_id": "6-2-infrastructure",
+              "description_ja": "重要インフラ管理",
+              "description_en": "Critical infrastructure management"
+            },
+            {
+              "item_id": "6-2-education",
+              "description_ja": "教育・職業訓練",
+              "description_en": "Education and vocational training"
+            },
+            {
+              "item_id": "6-2-employment",
+              "description_ja": "雇用・労働者管理",
+              "description_en": "Employment and workers management"
+            },
+            {
+              "item_id": "6-2-services",
+              "description_ja": "必須サービスへのアクセス",
+              "description_en": "Access to essential services"
+            },
+            {
+              "item_id": "6-2-law",
+              "description_ja": "法執行",
+              "description_en": "Law enforcement"
+            },
+            {
+              "item_id": "6-2-migration",
+              "description_ja": "移住・亡命・国境管理",
+              "description_en": "Migration, asylum and border control"
+            },
+            {
+              "item_id": "6-2-justice",
+              "description_ja": "司法・民主主義プロセス",
+              "description_en": "Justice and democratic processes"
+            }
+          ],
+          "conditions": "",
+          "verification_method": "Annex IIIの分類確認",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_9",
+          "article_number": "9条",
+          "relation_type": "prerequisite",
+          "description": "高リスクAIに対するリスク管理要件"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [
+        {
+          "annex_id": "Annex_I",
+          "section": "Section A",
+          "title_ja": "EU整合法令リスト",
+          "title_en": "List of Union Harmonization Legislation",
+          "description": "機械指令、玩具安全性指令、医療機器規則等",
+          "items": []
+        },
+        {
+          "annex_id": "Annex_III",
+          "section": "",
+          "title_ja": "高リスクAIシステムのユースケース",
+          "title_en": "High-Risk AI Systems Use Cases",
+          "description": "生体認証、重要インフラ、教育、雇用、法執行等の8分野",
+          "items": []
+        }
+      ],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": true,
+        "elements": [
+          {
+            "type": "table",
+            "description": "高リスクAIシステムの分類（Annex III）",
+            "data": {
+              "headers": [
+                "分野",
+                "具体例"
+              ],
+              "rows": [
+                [
+                  "生体認証",
+                  "リモート生体認証、感情認識"
+                ],
+                [
+                  "重要インフラ",
+                  "交通、水・ガス・電気供給管理"
+                ],
+                [
+                  "教育",
+                  "入学許可、試験評価"
+                ],
+                [
+                  "雇用",
+                  "採用、昇進評価"
+                ],
+                [
+                  "必須サービス",
+                  "信用評価、緊急サービス配分"
+                ],
+                [
+                  "法執行",
+                  "犯罪リスク評価、証拠信頼性評価"
+                ],
+                [
+                  "移住・国境管理",
+                  "亡命申請評価、ビザ審査"
+                ],
+                [
+                  "司法",
+                  "法律の解釈・適用"
+                ]
+              ]
+            },
+            "image_path": null
+          }
+        ]
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:57:47.219716",
+        "updated_at": "2025-11-04T13:57:47.219717",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "高リスク",
+          "分類",
+          "Annex"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_9",
+      "article_number": "9条",
+      "section_id": "3-4",
+      "title_ja": "リスク管理システム",
+      "title_en": "Risk Management System",
+      "slide_pages": [
+        42,
+        43
+      ],
+      "category": "obligation_provider",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムには、継続的かつ反復的なプロセスとして、システムのライフサイクル全体を通じて実行されるリスク管理システムが必要である。",
+        "en": "A risk management system shall be established, implemented, documented and maintained in relation to high-risk AI systems."
+      },
+      "requirements": [
+        {
+          "req_id": "9-1",
+          "type": "mandatory",
+          "description_ja": "リスク管理システムは確立しているか？",
+          "description_en": "Risk management system shall be established",
+          "sub_items": [],
+          "conditions": "高リスクAIシステムに適用",
+          "verification_method": "文書確認、システム監査",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "9-2",
+          "type": "mandatory",
+          "description_ja": "リスク同定・評価",
+          "description_en": "Risk identification and analysis",
+          "sub_items": [
+            {
+              "item_id": "9-2-a",
+              "description_ja": "意図した目的の利用における、既知のリスクと予見可能なリスクの同定・推定・評価",
+              "description_en": "Identification and analysis of the known and the foreseeable risks of the high-risk AI system"
+            },
+            {
+              "item_id": "9-2-b",
+              "description_ja": "意図した目的の利用における、予測可能な誤用を含めて、利用時にemergeするリスクの推定と評価",
+              "description_en": "Estimation and evaluation of the risks that may emerge when the high-risk AI system is used in accordance with its intended purpose and under conditions of reasonably foreseeable misuse"
+            },
+            {
+              "item_id": "9-2-c",
+              "description_ja": "上梓後モニタリングで集めたデータの分析に基づき、発生の可能性のある他のリスクの評価",
+              "description_en": "Evaluation of other possibly arising risks based on the analysis of data gathered from the post-market monitoring system"
+            }
+          ],
+          "conditions": "システムライフサイクル全体",
+          "verification_method": "リスク評価文書、分析レポート",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "9-3",
+          "type": "scope_definition",
+          "description_ja": "技術により合理的に軽減または削除できるリスクの範囲の限定",
+          "description_en": "Risks shall only refer to those which may be reasonably mitigated or eliminated through the development or design of the high-risk AI system",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "リスク範囲定義文書",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "9-5",
+          "type": "mandatory",
+          "description_ja": "リスク管理措置実施とリスク受容性の確認",
+          "description_en": "Adoption of the most appropriate risk management measures",
+          "sub_items": [
+            {
+              "item_id": "9-5-a",
+              "description_ja": "リスクの削減または削除",
+              "description_en": "Elimination or reduction of risks as far as technically feasible"
+            },
+            {
+              "item_id": "9-5-b",
+              "description_ja": "削除できないリスクに対する回避および制御方法の実装",
+              "description_en": "Implementation of appropriate mitigation and control measures"
+            }
+          ],
+          "conditions": "リスク評価後",
+          "verification_method": "リスク管理措置文書、実装確認",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "9-6",
+          "type": "mandatory",
+          "description_ja": "最も適切な、ターゲットを絞ったリスク管理の措置を同定するためのテストの実施",
+          "description_en": "Testing to ensure that high-risk AI systems perform consistently for their intended purpose",
+          "sub_items": [],
+          "conditions": "リスク管理措置の同定時",
+          "verification_method": "テスト計画書、テスト結果報告書",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "9-7",
+          "type": "conditional",
+          "description_ja": "実世界テスト要求に従ったテスト手順",
+          "description_en": "Testing procedures in line with real-world testing requirements",
+          "sub_items": [],
+          "conditions": "60条で実世界テストが要求される場合",
+          "verification_method": "実世界テスト計画・結果",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "9-8",
+          "type": "mandatory",
+          "description_ja": "指標や閾値に対する、上梓前テストの実施",
+          "description_en": "Testing with appropriate metrics and probabilistic thresholds",
+          "sub_items": [],
+          "conditions": "市場投入前",
+          "verification_method": "テスト結果、指標定義文書",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "9-9",
+          "type": "consideration",
+          "description_ja": "脆弱な人たちへの配慮",
+          "description_en": "Consideration of vulnerable persons",
+          "sub_items": [],
+          "conditions": "リスク評価・管理時",
+          "verification_method": "脆弱性評価文書",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_14",
+          "article_number": "14条",
+          "relation_type": "related",
+          "description": "人間による監視（リスク管理の一環）"
+        },
+        {
+          "article_id": "article_15",
+          "article_number": "15条",
+          "relation_type": "related",
+          "description": "正確性、堅牢性、セキュリティ（リスク管理措置に含まれる）"
+        },
+        {
+          "article_id": "article_60",
+          "article_number": "60条",
+          "relation_type": "references",
+          "description": "実世界条件でのテスト"
+        },
+        {
+          "article_id": "article_72",
+          "article_number": "72条",
+          "relation_type": "references",
+          "description": "上梓後モニタリング"
+        }
+      ],
+      "related_recitals": [
+        {
+          "recital_number": "前文66",
+          "summary_ja": "高リスクAIシステムのリスク管理と透明性に関する要件",
+          "summary_en": "Requirements for risk management and transparency of high-risk AI systems",
+          "relevance": "リスク管理システムの必要性を説明"
+        },
+        {
+          "recital_number": "前文71",
+          "summary_ja": "高リスクAIシステムの開発と運用に関する包括的な情報の重要性と記録保持の必要性",
+          "summary_en": "Importance of comprehensive information on development and operation of high-risk AI systems",
+          "relevance": "リスク管理の文書化の重要性"
+        }
+      ],
+      "related_annexes": [],
+      "notes": [
+        {
+          "note_id": "note_9_1",
+          "type": "explanation",
+          "content_ja": "リスク管理システムは継続的かつ反復的なプロセスとして、システムのライフサイクル全体を通じて実行される必要がある",
+          "content_en": "The risk management system shall be a continuous iterative process run throughout the entire lifecycle of a high-risk AI system",
+          "position": "全体"
+        },
+        {
+          "note_id": "note_9_2",
+          "type": "caution",
+          "content_ja": "リスクの範囲は、技術により合理的に軽減または削除できるものに限定される（9条(3)）",
+          "content_en": "Risks shall only refer to those which may be reasonably mitigated or eliminated (Article 9(3))",
+          "position": "9-3"
+        }
+      ],
+      "visual_elements": {
+        "has_flowchart": true,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": [
+          {
+            "type": "flowchart",
+            "description": "リスク管理プロセスのフローチャート",
+            "data": {
+              "steps": [
+                "リスク管理システムの確立",
+                "意図した目的の明確化",
+                "リスク同定・評価",
+                "リスク管理措置実施",
+                "残リスクの受容可能性確認",
+                "テストの実施"
+              ]
+            },
+            "image_path": null
+          }
+        ]
+      },
+      "metadata": {
+        "created_at": "2024-10-27T00:00:00Z",
+        "updated_at": "2024-10-27T00:00:00Z",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "高リスクAI",
+          "リスク管理",
+          "提供者義務",
+          "必須要件"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_10",
+      "article_number": "10条",
+      "section_id": "3-4",
+      "title_ja": "データガバナンス",
+      "title_en": "Data and Data Governance",
+      "slide_pages": [
+        44
+      ],
+      "category": "obligation_provider",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムのトレーニング、検証、テストに使用されるデータセットは、品質基準を満たさなければならない",
+        "en": "Training, validation and testing data sets shall be subject to appropriate data governance and management practices"
+      },
+      "requirements": [
+        {
+          "req_id": "10-1",
+          "type": "mandatory",
+          "description_ja": "データは品質基準を満たしているか",
+          "description_en": "Data meets quality criteria",
+          "sub_items": [],
+          "conditions": "高リスクAIシステム",
+          "verification_method": "データ品質評価レポート",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "10-2",
+          "type": "mandatory",
+          "description_ja": "データに関する適切な考慮",
+          "description_en": "Appropriate data considerations",
+          "sub_items": [
+            {
+              "item_id": "10-2-a",
+              "description_ja": "関連する設計の選択",
+              "description_en": "Relevant design choices"
+            },
+            {
+              "item_id": "10-2-c",
+              "description_ja": "データ準備処理操作",
+              "description_en": "Data preparation processing operations"
+            },
+            {
+              "item_id": "10-2-f",
+              "description_ja": "人権や差別につながる可能性のあるデータのバイアスの精査",
+              "description_en": "Examination of possible biases"
+            },
+            {
+              "item_id": "10-2-g",
+              "description_ja": "データのバイアスの検知・予防・軽減",
+              "description_en": "Detection and mitigation of biases"
+            }
+          ],
+          "conditions": "",
+          "verification_method": "データガバナンス文書",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "10-3",
+          "type": "mandatory",
+          "description_ja": "データセットの十分性、代表性、完全性の確認",
+          "description_en": "Ensure data sets are relevant, sufficiently representative and complete",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "データセット評価",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "10-4",
+          "type": "mandatory",
+          "description_ja": "地理的、文脈的、行動的または機能的設定に特有の特性や要素の考慮",
+          "description_en": "Consider specific characteristics of geographical, contextual, behavioral or functional setting",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "文脈分析文書",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "10-5",
+          "type": "mandatory",
+          "description_ja": "個人データ処理時のバイアス検出と修正",
+          "description_en": "Bias detection and correction for personal data processing",
+          "sub_items": [
+            {
+              "item_id": "10-5-a",
+              "description_ja": "人工データと匿名化されたデータにバイアスの検出と修正",
+              "description_en": "Bias detection in synthetic and anonymized data"
+            },
+            {
+              "item_id": "10-5-b",
+              "description_ja": "データの仮名化",
+              "description_en": "Pseudonymization of data"
+            },
+            {
+              "item_id": "10-5-f",
+              "description_ja": "処理の履歴の記録",
+              "description_en": "Record of processing activities"
+            }
+          ],
+          "conditions": "個人データ処理時",
+          "verification_method": "プライバシー影響評価",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_9",
+          "article_number": "9条",
+          "relation_type": "related",
+          "description": "リスク管理におけるデータの役割"
+        }
+      ],
+      "related_recitals": [
+        {
+          "recital_number": "前文66",
+          "summary_ja": "高リスクAIシステムに対する、データ品質の要求",
+          "summary_en": "Data quality requirements for high-risk AI",
+          "relevance": "データ品質の重要性"
+        },
+        {
+          "recital_number": "前文67",
+          "summary_ja": "高品質データの必要性",
+          "summary_en": "Need for high-quality data",
+          "relevance": "データ品質基準の根拠"
+        },
+        {
+          "recital_number": "前文69",
+          "summary_ja": "プライバシー、個人情報保護",
+          "summary_en": "Privacy and personal data protection",
+          "relevance": "個人データ処理の要件"
+        }
+      ],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": true,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:57:47.219723",
+        "updated_at": "2025-11-04T13:57:47.219724",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "データガバナンス",
+          "データ品質",
+          "バイアス",
+          "プライバシー"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_11",
+      "article_number": "11条",
+      "section_id": "3-4",
+      "title_ja": "技術文書",
+      "title_en": "Technical Documentation",
+      "slide_pages": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "category": "obligation_provider",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムの技術文書は、システムが本規則の要件を満たしていることを証明するために作成・保持されなければならない",
+        "en": "Technical documentation of high-risk AI systems shall be drawn up and kept up to date"
+      },
+      "requirements": [
+        {
+          "req_id": "11-1",
+          "type": "mandatory",
+          "description_ja": "技術文書の上梓前の作成と保持",
+          "description_en": "Draw up and maintain technical documentation",
+          "sub_items": [
+            {
+              "item_id": "11-annexIV-1",
+              "description_ja": "AI システムの一般的な説明",
+              "description_en": "General description of AI system"
+            },
+            {
+              "item_id": "11-annexIV-2",
+              "description_ja": "開発プロセスに関する詳細な説明",
+              "description_en": "Detailed description of development process"
+            },
+            {
+              "item_id": "11-annexIV-3",
+              "description_ja": "監視、機能、制御に関する詳細情報",
+              "description_en": "Detailed information on monitoring and control"
+            },
+            {
+              "item_id": "11-annexIV-4",
+              "description_ja": "リスク管理体制の詳細な説明",
+              "description_en": "Detailed description of risk management system"
+            },
+            {
+              "item_id": "11-annexIV-5",
+              "description_ja": "システムへの変更の説明",
+              "description_en": "Description of changes to the system"
+            }
+          ],
+          "conditions": "高リスクAIシステム",
+          "verification_method": "技術文書レビュー",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_9",
+          "article_number": "9条",
+          "relation_type": "references",
+          "description": "リスク管理システムの文書化"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [
+        {
+          "annex_id": "Annex_IV",
+          "section": "",
+          "title_ja": "技術文書の内容",
+          "title_en": "Contents of technical documentation",
+          "description": "技術文書に含むべき詳細項目",
+          "items": []
+        }
+      ],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:57:47.215304",
+        "updated_at": "2025-11-04T13:57:47.215317",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "技術文書",
+          "文書化",
+          "Annex IV"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_12",
+      "article_number": "12条",
+      "section_id": "3-4",
+      "title_ja": "記録保持",
+      "title_en": "Record Keeping",
+      "slide_pages": [
+        52
+      ],
+      "category": "obligation_provider",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムは、自動的にログを記録する機能を備えていなければならない",
+        "en": "High-risk AI systems shall technically allow for the automatic recording of events"
+      },
+      "requirements": [
+        {
+          "req_id": "12-1",
+          "type": "mandatory",
+          "description_ja": "自動イベント（ログ）記録",
+          "description_en": "Automatic event logging",
+          "sub_items": [],
+          "conditions": "高リスクAIシステム",
+          "verification_method": "ログ機能の確認",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "12-2",
+          "type": "mandatory",
+          "description_ja": "トレーサビリティのためのログ記録",
+          "description_en": "Logging for traceability",
+          "sub_items": [
+            {
+              "item_id": "12-2-a",
+              "description_ja": "リスクが生じる可能性の記録",
+              "description_en": "Record of potential risks"
+            },
+            {
+              "item_id": "12-2-b",
+              "description_ja": "上梓後モニタリングに係るログ",
+              "description_en": "Logs for post-market monitoring"
+            },
+            {
+              "item_id": "12-2-c",
+              "description_ja": "運用監視のログ",
+              "description_en": "Logs for operational monitoring"
+            }
+          ],
+          "conditions": "",
+          "verification_method": "ログ記録の確認",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "12-3",
+          "type": "mandatory",
+          "description_ja": "高リスクAIシステムにおけるログ記録",
+          "description_en": "Logging in high-risk AI systems",
+          "sub_items": [
+            {
+              "item_id": "12-3-a",
+              "description_ja": "システムの使用期間をログとして記録",
+              "description_en": "Record of system usage period"
+            },
+            {
+              "item_id": "12-3-b",
+              "description_ja": "参照データベースのログ記録",
+              "description_en": "Record of reference database"
+            },
+            {
+              "item_id": "12-3-c",
+              "description_ja": "入力データのチェック結果の記録",
+              "description_en": "Record of input data checks"
+            },
+            {
+              "item_id": "12-3-d",
+              "description_ja": "結果の検証に関与した自然人の記録",
+              "description_en": "Record of natural persons involved"
+            }
+          ],
+          "conditions": "",
+          "verification_method": "ログ内容の確認",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_14",
+          "article_number": "14条",
+          "relation_type": "references",
+          "description": "人間による監視の記録"
+        },
+        {
+          "article_id": "article_72",
+          "article_number": "72条",
+          "relation_type": "references",
+          "description": "上梓後モニタリング"
+        }
+      ],
+      "related_recitals": [
+        {
+          "recital_number": "前文71",
+          "summary_ja": "データおよび処理に関する記録の作成と保持",
+          "summary_en": "Record keeping requirements",
+          "relevance": "記録保持の必要性"
+        }
+      ],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:57:47.215325",
+        "updated_at": "2025-11-04T13:57:47.215326",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "記録保持",
+          "ログ",
+          "トレーサビリティ"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_13",
+      "article_number": "13条",
+      "section_id": "3-4",
+      "title_ja": "配備者に対する透明性と情報提供",
+      "title_en": "Transparency and Provision of Information to Deployers",
+      "slide_pages": [
+        53
+      ],
+      "category": "transparency",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムは、配備者がシステムの出力を解釈し適切に使用できるよう、十分な透明性を確保するように設計・開発されなければならない",
+        "en": "High-risk AI systems shall be designed and developed to ensure sufficient transparency to enable deployers to interpret the system's output"
+      },
+      "requirements": [
+        {
+          "req_id": "13-1",
+          "type": "mandatory",
+          "description_ja": "AIシステムの透明性の確保",
+          "description_en": "Ensure transparency of AI system",
+          "sub_items": [],
+          "conditions": "高リスクAIシステム",
+          "verification_method": "透明性評価",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "13-3",
+          "type": "mandatory",
+          "description_ja": "取扱説明書に含まれるべき項目",
+          "description_en": "Instructions for use shall contain required information",
+          "sub_items": [
+            {
+              "item_id": "13-3-a",
+              "description_ja": "プロバイダーの身元と連絡先",
+              "description_en": "Provider's identity and contact"
+            },
+            {
+              "item_id": "13-3-b",
+              "description_ja": "システムの特性・能力・性能限界",
+              "description_en": "System characteristics and limitations"
+            },
+            {
+              "item_id": "13-3-c",
+              "description_ja": "予想される精度レベル",
+              "description_en": "Expected level of accuracy"
+            },
+            {
+              "item_id": "13-3-d",
+              "description_ja": "堅牢性とサイバーセキュリティ措置",
+              "description_en": "Robustness and cybersecurity measures"
+            },
+            {
+              "item_id": "13-3-e",
+              "description_ja": "人間による監視措置",
+              "description_en": "Human oversight measures"
+            },
+            {
+              "item_id": "13-3-f",
+              "description_ja": "予想されるライフタイム",
+              "description_en": "Expected lifetime"
+            }
+          ],
+          "conditions": "",
+          "verification_method": "取扱説明書レビュー",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_14",
+          "article_number": "14条",
+          "relation_type": "related",
+          "description": "人間による監視"
+        },
+        {
+          "article_id": "article_15",
+          "article_number": "15条",
+          "relation_type": "related",
+          "description": "正確性・堅牢性"
+        }
+      ],
+      "related_recitals": [
+        {
+          "recital_number": "前文72",
+          "summary_ja": "高リスクAIシステムの透明性確保と使用者への情報提供の重要性",
+          "summary_en": "Importance of transparency and information provision",
+          "relevance": "透明性要件の根拠"
+        }
+      ],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:57:47.215332",
+        "updated_at": "2025-11-04T13:57:47.215333",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "透明性",
+          "取扱説明書",
+          "配備者"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_14",
+      "article_number": "14条",
+      "section_id": "3-4",
+      "title_ja": "人間によるオーバーサイト",
+      "title_en": "Human Oversight",
+      "slide_pages": [
+        54
+      ],
+      "category": "obligation_provider",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムは、自然人による効果的な監視が可能となるように設計・開発されなければならない",
+        "en": "High-risk AI systems shall be designed and developed to enable effective oversight by natural persons"
+      },
+      "requirements": [
+        {
+          "req_id": "14-1",
+          "type": "mandatory",
+          "description_ja": "自然人による効果的な監視ができるような設計・開発",
+          "description_en": "Design for effective human oversight",
+          "sub_items": [],
+          "conditions": "高リスクAIシステム",
+          "verification_method": "監視機能の評価",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "14-2",
+          "type": "mandatory",
+          "description_ja": "リスクの防止あるいは最小限にすることを目的とした監視",
+          "description_en": "Oversight aims to prevent or minimize risks",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "監視手順の確認",
+          "responsible_party": "deployer"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_9",
+          "article_number": "9条",
+          "relation_type": "related",
+          "description": "リスク管理における人間の役割"
+        },
+        {
+          "article_id": "article_13",
+          "article_number": "13条",
+          "relation_type": "related",
+          "description": "監視措置の情報提供"
+        }
+      ],
+      "related_recitals": [
+        {
+          "recital_number": "前文73",
+          "summary_ja": "高リスクAIシステムの人間による監視と介入の必要性と要件",
+          "summary_en": "Requirements for human oversight",
+          "relevance": "人間監視の必要性"
+        }
+      ],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597171",
+        "updated_at": "2025-11-04T13:59:51.597183",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "人間監視",
+          "オーバーサイト",
+          "Human-in-the-loop"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_15",
+      "article_number": "15条",
+      "section_id": "3-4",
+      "title_ja": "正確性・頑健性・セキュリティ",
+      "title_en": "Accuracy, Robustness and Cybersecurity",
+      "slide_pages": [
+        55
+      ],
+      "category": "obligation_provider",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムは、適切なレベルの精度、堅牢性、安全性、サイバーセキュリティを達成するように設計・開発されなければならない",
+        "en": "High-risk AI systems shall be designed and developed to achieve appropriate levels of accuracy, robustness, and cybersecurity"
+      },
+      "requirements": [
+        {
+          "req_id": "15-1",
+          "type": "mandatory",
+          "description_ja": "適切なレベルの精度、堅牢性、安全性、サイバーセキュリティの達成",
+          "description_en": "Achieve appropriate levels of accuracy, robustness and cybersecurity",
+          "sub_items": [],
+          "conditions": "高リスクAIシステム",
+          "verification_method": "性能テスト、セキュリティ評価",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "15-3",
+          "type": "mandatory",
+          "description_ja": "正確性のレベルと指標を取説に記述",
+          "description_en": "Document accuracy levels and metrics in instructions",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "取扱説明書レビュー",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_9",
+          "article_number": "9条",
+          "relation_type": "related",
+          "description": "リスク管理における精度・堅牢性の考慮"
+        },
+        {
+          "article_id": "article_13",
+          "article_number": "13条",
+          "relation_type": "related",
+          "description": "精度・堅牢性情報の提供"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597191",
+        "updated_at": "2025-11-04T13:59:51.597192",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "正確性",
+          "堅牢性",
+          "サイバーセキュリティ"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_16",
+      "article_number": "16条",
+      "section_id": "3-4",
+      "title_ja": "高リスクシステムの提供者に対する義務",
+      "title_en": "Obligations of Providers of High-Risk AI Systems",
+      "slide_pages": [
+        56
+      ],
+      "category": "obligation_provider",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムの提供者は、第III章第2節の要求事項に準拠しなければならない",
+        "en": "Providers of high-risk AI systems shall comply with the requirements laid down in Chapter III, Section 2"
+      },
+      "requirements": [
+        {
+          "req_id": "16-a",
+          "type": "mandatory",
+          "description_ja": "Section2の要求に準拠",
+          "description_en": "Comply with Section 2 requirements",
+          "sub_items": [],
+          "conditions": "高リスクAIシステムの提供者",
+          "verification_method": "包括的コンプライアンス評価",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "16-c",
+          "type": "mandatory",
+          "description_ja": "品質管理システムの導入",
+          "description_en": "Implement quality management system",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "品質管理システム監査",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "16-f",
+          "type": "mandatory",
+          "description_ja": "適合性評価の実施",
+          "description_en": "Conduct conformity assessment",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "適合性評価結果",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_9",
+          "article_number": "9条",
+          "relation_type": "references",
+          "description": "リスク管理システム"
+        },
+        {
+          "article_id": "article_10",
+          "article_number": "10条",
+          "relation_type": "references",
+          "description": "データガバナンス"
+        },
+        {
+          "article_id": "article_17",
+          "article_number": "17条",
+          "relation_type": "references",
+          "description": "品質管理システム"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597197",
+        "updated_at": "2025-11-04T13:59:51.597198",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "提供者義務",
+          "コンプライアンス"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_17",
+      "article_number": "17条",
+      "section_id": "3-4",
+      "title_ja": "品質管理システム",
+      "title_en": "Quality Management System",
+      "slide_pages": [
+        57
+      ],
+      "category": "quality_management",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムの提供者は、品質管理システムを導入しなければならない",
+        "en": "Providers of high-risk AI systems shall put a quality management system in place"
+      },
+      "requirements": [
+        {
+          "req_id": "17-1",
+          "type": "mandatory",
+          "description_ja": "品質管理システムの導入",
+          "description_en": "Implement quality management system",
+          "sub_items": [
+            {
+              "item_id": "17-a",
+              "description_ja": "法規制遵守のための戦略",
+              "description_en": "Strategy for regulatory compliance"
+            },
+            {
+              "item_id": "17-b",
+              "description_ja": "設計や設計検証に使われる技術、手続き",
+              "description_en": "Design and verification techniques"
+            },
+            {
+              "item_id": "17-c",
+              "description_ja": "品質管理に使われる技術、手続き",
+              "description_en": "Quality control techniques"
+            },
+            {
+              "item_id": "17-d",
+              "description_ja": "検査、テスト、妥当性評価手順",
+              "description_en": "Testing and validation procedures"
+            },
+            {
+              "item_id": "17-g",
+              "description_ja": "リスク管理システム",
+              "description_en": "Risk management system"
+            },
+            {
+              "item_id": "17-h",
+              "description_ja": "上梓後モニターシステム",
+              "description_en": "Post-market monitoring system"
+            }
+          ],
+          "conditions": "高リスクAIシステムの提供者",
+          "verification_method": "品質管理システム監査",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_9",
+          "article_number": "9条",
+          "relation_type": "related",
+          "description": "リスク管理システム"
+        },
+        {
+          "article_id": "article_72",
+          "article_number": "72条",
+          "relation_type": "related",
+          "description": "上梓後モニタリング"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597206",
+        "updated_at": "2025-11-04T13:59:51.597207",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "品質管理",
+          "QMS",
+          "プロセス管理"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_26",
+      "article_number": "26条",
+      "section_id": "3-4",
+      "title_ja": "高リスクシステムの配置者に対する義務",
+      "title_en": "Obligations of Deployers of High-Risk AI Systems",
+      "slide_pages": [
+        58
+      ],
+      "category": "obligation_deployer",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムの配置者は、使用説明書に従って技術的および組織的措置を講じなければならない",
+        "en": "Deployers of high-risk AI systems shall take appropriate technical and organisational measures in accordance with instructions for use"
+      },
+      "requirements": [
+        {
+          "req_id": "26-1",
+          "type": "mandatory",
+          "description_ja": "使用説明書に従った技術的および組織的措置",
+          "description_en": "Technical and organisational measures per instructions",
+          "sub_items": [],
+          "conditions": "高リスクAIシステムの配置者",
+          "verification_method": "措置の実装確認",
+          "responsible_party": "deployer"
+        },
+        {
+          "req_id": "26-2",
+          "type": "mandatory",
+          "description_ja": "自然人による監視の割り当て",
+          "description_en": "Assign natural persons for oversight",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "監視体制の確認",
+          "responsible_party": "deployer"
+        },
+        {
+          "req_id": "26-4",
+          "type": "mandatory",
+          "description_ja": "入力データの関連性と代表性の確認",
+          "description_en": "Ensure input data is relevant and representative",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "データ品質評価",
+          "responsible_party": "deployer"
+        },
+        {
+          "req_id": "26-5",
+          "type": "mandatory",
+          "description_ja": "運用の監視と提供者への通知",
+          "description_en": "Monitor operation and inform provider",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "監視記録、通知記録",
+          "responsible_party": "deployer"
+        },
+        {
+          "req_id": "26-6",
+          "type": "mandatory",
+          "description_ja": "ログを少なくとも６か月保持",
+          "description_en": "Retain logs for at least 6 months",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "ログ保持の確認",
+          "responsible_party": "deployer"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_14",
+          "article_number": "14条",
+          "relation_type": "related",
+          "description": "人間による監視"
+        },
+        {
+          "article_id": "article_12",
+          "article_number": "12条",
+          "relation_type": "related",
+          "description": "記録保持"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597216",
+        "updated_at": "2025-11-04T13:59:51.597217",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "配置者義務",
+          "deployer",
+          "運用"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_43",
+      "article_number": "43条",
+      "section_id": "3-4",
+      "title_ja": "適合性アセスメント",
+      "title_en": "Conformity Assessment",
+      "slide_pages": [
+        59
+      ],
+      "category": "conformity_assessment",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムの提供者は、市場投入前または使用開始前に適合性評価を実施しなければならない",
+        "en": "Providers shall ensure that high-risk AI systems undergo conformity assessment before being placed on the market or put into service"
+      },
+      "requirements": [
+        {
+          "req_id": "43-1",
+          "type": "mandatory",
+          "description_ja": "生体認証システムの第三者適合性評価",
+          "description_en": "Third-party conformity assessment for biometric systems",
+          "sub_items": [],
+          "conditions": "Annex II(1)生体認証の高リスクAIシステム",
+          "verification_method": "第三者機関による評価",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_16",
+          "article_number": "16条",
+          "relation_type": "related",
+          "description": "提供者の義務"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597219",
+        "updated_at": "2025-11-04T13:59:51.597220",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "適合性評価",
+          "第三者評価",
+          "認証"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_50",
+      "article_number": "50条",
+      "section_id": "3-4",
+      "title_ja": "「ある種のAI」およびGPAIに対する透明性義務",
+      "title_en": "Transparency Obligations for Certain AI Systems and GPAI Models",
+      "slide_pages": [
+        60
+      ],
+      "category": "transparency",
+      "risk_level": "limited-risk",
+      "article_text": {
+        "ja": "特定のAIシステムおよび汎用AIモデルの提供者と使用者は、透明性義務を遵守しなければならない",
+        "en": "Providers and users of certain AI systems and GPAI models shall comply with transparency obligations"
+      },
+      "requirements": [
+        {
+          "req_id": "50-1",
+          "type": "mandatory",
+          "description_ja": "自然人と対話するAIシステムは対話していることを通知",
+          "description_en": "AI systems interacting with natural persons shall inform that they are interacting with AI",
+          "sub_items": [],
+          "conditions": "自然人と対話するAIシステム",
+          "verification_method": "通知機能の確認",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "50-2",
+          "type": "mandatory",
+          "description_ja": "生成AIの出力が人工的に生成されたものとして検出可能であることを保証",
+          "description_en": "Ensure outputs of generative AI are detectable as artificially generated",
+          "sub_items": [],
+          "conditions": "生成AIシステム",
+          "verification_method": "検出可能性の確認",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "50-3",
+          "type": "mandatory",
+          "description_ja": "感情認識、生体認証AIシステム利用時の通知",
+          "description_en": "Inform subjects of emotion recognition or biometric categorization",
+          "sub_items": [],
+          "conditions": "感情認識・生体認証分類システム",
+          "verification_method": "通知の実装確認",
+          "responsible_party": "deployer"
+        },
+        {
+          "req_id": "50-4",
+          "type": "mandatory",
+          "description_ja": "ディープフェイクを生成するAIはその旨を開示",
+          "description_en": "Disclose that content is generated or manipulated (deepfakes)",
+          "sub_items": [],
+          "conditions": "ディープフェイク生成システム",
+          "verification_method": "開示の確認",
+          "responsible_party": "provider, deployer"
+        }
+      ],
+      "related_articles": [],
+      "related_recitals": [
+        {
+          "recital_number": "前文132",
+          "summary_ja": "自然人との対話やコンテンツ生成を行うAIシステムの透明性義務",
+          "summary_en": "Transparency obligations for AI systems",
+          "relevance": "透明性義務の必要性"
+        }
+      ],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597225",
+        "updated_at": "2025-11-04T13:59:51.597226",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "透明性",
+          "GPAI",
+          "生成AI",
+          "ディープフェイク"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_51",
+      "article_number": "51条",
+      "section_id": "3-4",
+      "title_ja": "GPAIの分類",
+      "title_en": "Classification of GPAI Models with Systemic Risk",
+      "slide_pages": [
+        61
+      ],
+      "category": "gpai",
+      "risk_level": "gpai_systemic",
+      "article_text": {
+        "ja": "システミックリスクを持つ汎用AIモデルは、特定の条件を満たすものとして分類される",
+        "en": "GPAI models with systemic risks are classified based on specific criteria"
+      },
+      "requirements": [
+        {
+          "req_id": "51-1",
+          "type": "definition",
+          "description_ja": "GPAI with systemic riskの定義",
+          "description_en": "Definition of GPAI with systemic risk",
+          "sub_items": [
+            {
+              "item_id": "51-1-a",
+              "description_ja": "ベンチマークや指標などの技術的なツールや手法によって、「高インパクト能力」をもつと評価されたもの",
+              "description_en": "Assessed as having high impact capabilities through benchmarks"
+            },
+            {
+              "item_id": "51-1-b",
+              "description_ja": "Annex XIIIのクライテリアに照らして、同等の能力を持つと決定されたもの",
+              "description_en": "Determined to have equivalent capabilities per Annex XIII criteria"
+            }
+          ],
+          "conditions": "",
+          "verification_method": "能力評価、委員会決定",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_53",
+          "article_number": "53条",
+          "relation_type": "related",
+          "description": "GPAIの提供者義務"
+        },
+        {
+          "article_id": "article_55",
+          "article_number": "55条",
+          "relation_type": "related",
+          "description": "システミックリスクGPAIの追加義務"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [
+        {
+          "annex_id": "Annex_XIII",
+          "section": "",
+          "title_ja": "システミックリスクの判定基準",
+          "title_en": "Criteria for systemic risk",
+          "description": "高インパクト能力の評価基準",
+          "items": []
+        }
+      ],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597233",
+        "updated_at": "2025-11-04T13:59:51.597234",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "GPAI",
+          "システミックリスク",
+          "分類"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_53",
+      "article_number": "53条",
+      "section_id": "3-4",
+      "title_ja": "GPAIの提供者に対する義務",
+      "title_en": "Obligations for Providers of GPAI Models",
+      "slide_pages": [
+        62,
+        63,
+        64
+      ],
+      "category": "gpai",
+      "risk_level": "gpai",
+      "article_text": {
+        "ja": "汎用AIモデルの提供者は、特定の義務を遵守しなければならない",
+        "en": "Providers of GPAI models shall comply with specific obligations"
+      },
+      "requirements": [
+        {
+          "req_id": "53-1-a",
+          "type": "mandatory",
+          "description_ja": "モデルの技術文書、学習・テストプロセス、評価の記録と提出",
+          "description_en": "Document and submit technical documentation of model",
+          "sub_items": [],
+          "conditions": "GPAIモデルの提供者",
+          "verification_method": "技術文書の確認",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "53-1-b",
+          "type": "mandatory",
+          "description_ja": "GPAIモデルを組み込むAIシステムの提供者への情報提供",
+          "description_en": "Provide information to downstream providers",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "情報提供の確認",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "53-1-c",
+          "type": "mandatory",
+          "description_ja": "著作権法関連のポリシー",
+          "description_en": "Copyright policy",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "ポリシー文書の確認",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "53-1-d",
+          "type": "mandatory",
+          "description_ja": "モデルを開発するときに使ったデータについての公開サマリー",
+          "description_en": "Public summary of training data",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "公開サマリーの確認",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_50",
+          "article_number": "50条",
+          "relation_type": "related",
+          "description": "GPAI透明性義務"
+        },
+        {
+          "article_id": "article_51",
+          "article_number": "51条",
+          "relation_type": "related",
+          "description": "GPAI分類"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [
+        {
+          "annex_id": "Annex_XI",
+          "section": "",
+          "title_ja": "技術文書の内容",
+          "title_en": "Technical documentation contents",
+          "description": "GPAIモデルの技術文書に含むべき項目",
+          "items": []
+        },
+        {
+          "annex_id": "Annex_XII",
+          "section": "",
+          "title_ja": "透明性情報",
+          "title_en": "Transparency information",
+          "description": "下流提供者への情報提供内容",
+          "items": []
+        }
+      ],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597240",
+        "updated_at": "2025-11-04T13:59:51.597241",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "GPAI",
+          "提供者義務",
+          "技術文書",
+          "著作権"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_55",
+      "article_number": "55条",
+      "section_id": "3-4",
+      "title_ja": "システミックリスクをもつGPAIモデルの提供者への義務",
+      "title_en": "Obligations for Providers of GPAI Models with Systemic Risk",
+      "slide_pages": [
+        65,
+        66
+      ],
+      "category": "gpai",
+      "risk_level": "gpai_systemic",
+      "article_text": {
+        "ja": "システミックリスクを持つ汎用AIモデルの提供者は、53条、54条に加えて追加の義務を負う",
+        "en": "Providers of GPAI models with systemic risk shall comply with additional obligations"
+      },
+      "requirements": [
+        {
+          "req_id": "55-1-a",
+          "type": "mandatory",
+          "description_ja": "モデル評価を実施し、システミックリスクを特定および軽減するための対抗試験を実施および文書化",
+          "description_en": "Conduct model evaluation and adversarial testing",
+          "sub_items": [],
+          "conditions": "システミックリスクGPAI",
+          "verification_method": "評価・テスト文書",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "55-1-b",
+          "type": "mandatory",
+          "description_ja": "システミックリスクの発生源を含めた評価と軽減",
+          "description_en": "Assess and mitigate systemic risks",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "リスク評価・軽減計画",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "55-1-c",
+          "type": "mandatory",
+          "description_ja": "重大インシデント対応",
+          "description_en": "Track and report serious incidents",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "インシデント対応手順",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "55-1-d",
+          "type": "mandatory",
+          "description_ja": "物理インフラに対するセキュリティ保護",
+          "description_en": "Ensure adequate cybersecurity protection",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "セキュリティ評価",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_51",
+          "article_number": "51条",
+          "relation_type": "prerequisite",
+          "description": "システミックリスクの定義"
+        },
+        {
+          "article_id": "article_53",
+          "article_number": "53条",
+          "relation_type": "related",
+          "description": "GPAI基本義務"
+        }
+      ],
+      "related_recitals": [
+        {
+          "recital_number": "前文103",
+          "summary_ja": "フリー・オープンソースライセンスのGPAIモデルに対する例外規定",
+          "summary_en": "Exceptions for open-source GPAI models",
+          "relevance": "オープンソースモデルの扱い"
+        }
+      ],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597245",
+        "updated_at": "2025-11-04T13:59:51.597246",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "GPAI",
+          "システミックリスク",
+          "対抗試験",
+          "セキュリティ"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_60",
+      "article_number": "60条",
+      "section_id": "3-4",
+      "title_ja": "リアルワールド条件でのテスト",
+      "title_en": "Testing of High-Risk AI Systems in Real World Conditions",
+      "slide_pages": [
+        67
+      ],
+      "category": "testing",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムの提供者および配置者は、実世界条件下でのテストを実施できる",
+        "en": "Providers and deployers may conduct testing of high-risk AI systems in real world conditions"
+      },
+      "requirements": [
+        {
+          "req_id": "60-5-a",
+          "type": "mandatory",
+          "description_ja": "市場サーベイランス当局に実世界テスト計画を事前提出",
+          "description_en": "Submit real-world testing plan to market surveillance authority",
+          "sub_items": [],
+          "conditions": "実世界テストを実施する場合",
+          "verification_method": "計画提出の確認",
+          "responsible_party": "provider, deployer"
+        },
+        {
+          "req_id": "60-5-c",
+          "type": "mandatory",
+          "description_ja": "テストをEUデータベースに登録",
+          "description_en": "Register testing in EU database",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "登録の確認",
+          "responsible_party": "provider, deployer"
+        },
+        {
+          "req_id": "60-8",
+          "type": "mandatory",
+          "description_ja": "インフォームドコンセント等の実施",
+          "description_en": "Obtain informed consent",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "同意記録の確認",
+          "responsible_party": "provider, deployer"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_9",
+          "article_number": "9条",
+          "relation_type": "related",
+          "description": "リスク管理におけるテスト"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597251",
+        "updated_at": "2025-11-04T13:59:51.597252",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "実世界テスト",
+          "臨床試験",
+          "市場調査"
+        ],
+        "comments": []
+      }
+    },
+    {
+      "article_id": "article_72",
+      "article_number": "72条",
+      "section_id": "3-4",
+      "title_ja": "上梓後モニタリング",
+      "title_en": "Post-Market Monitoring",
+      "slide_pages": [
+        68
+      ],
+      "category": "monitoring",
+      "risk_level": "high-risk",
+      "article_text": {
+        "ja": "高リスクAIシステムの提供者は、上梓後モニタリングシステムを確立しなければならない",
+        "en": "Providers shall establish and document a post-market monitoring system"
+      },
+      "requirements": [
+        {
+          "req_id": "72-1",
+          "type": "mandatory",
+          "description_ja": "上梓後モニタリングシステムの確立",
+          "description_en": "Establish post-market monitoring system",
+          "sub_items": [],
+          "conditions": "高リスクAIシステムの提供者",
+          "verification_method": "モニタリングシステムの確認",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "72-2",
+          "type": "mandatory",
+          "description_ja": "継続的な適合評価機能",
+          "description_en": "Continuous compliance assessment function",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "適合評価プロセスの確認",
+          "responsible_party": "provider"
+        },
+        {
+          "req_id": "72-3",
+          "type": "mandatory",
+          "description_ja": "上梓後モニタリング計画の立案",
+          "description_en": "Establish post-market monitoring plan",
+          "sub_items": [],
+          "conditions": "",
+          "verification_method": "計画文書の確認",
+          "responsible_party": "provider"
+        }
+      ],
+      "related_articles": [
+        {
+          "article_id": "article_9",
+          "article_number": "9条",
+          "relation_type": "related",
+          "description": "リスク管理におけるモニタリング"
+        },
+        {
+          "article_id": "article_12",
+          "article_number": "12条",
+          "relation_type": "related",
+          "description": "モニタリングのためのログ記録"
+        },
+        {
+          "article_id": "article_17",
+          "article_number": "17条",
+          "relation_type": "related",
+          "description": "品質管理システムの一部"
+        }
+      ],
+      "related_recitals": [],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-04T13:59:51.597260",
+        "updated_at": "2025-11-04T13:59:51.597261",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "上梓後モニタリング",
+          "市場監視",
+          "継続的評価"
+        ],
+        "comments": []
+      }
+    }
+  ]
+}
