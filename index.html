@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欧州AI法条目エクスプローラー・エディタ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>欧州AI法条目エクスプローラー・エディタ</h1>
+            <div class="header-controls">
+                <button id="loadDataBtn" class="btn btn-primary">JSONデータ読み込み</button>
+                <button id="saveDataBtn" class="btn btn-success">JSON保存</button>
+                <button id="addArticleBtn" class="btn btn-info">新規条目追加</button>
+                <button id="generateSlidesBtn" class="btn btn-warning">スライド生成</button>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Left Pane: Article Index -->
+            <aside class="left-pane">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="条目検索..." />
+                </div>
+                <div class="filter-controls">
+                    <select id="categoryFilter">
+                        <option value="">全カテゴリ</option>
+                        <option value="definition">定義</option>
+                        <option value="scope">範囲・目的</option>
+                        <option value="prohibition">禁止事項</option>
+                        <option value="classification">分類</option>
+                        <option value="obligation_provider">提供者の義務</option>
+                        <option value="obligation_deployer">配備者の義務</option>
+                        <option value="quality_management">品質管理</option>
+                        <option value="conformity_assessment">適合性評価</option>
+                        <option value="transparency">透明性</option>
+                        <option value="testing">テスト</option>
+                        <option value="monitoring">モニタリング</option>
+                        <option value="gpai">汎用AI関連</option>
+                    </select>
+                    <select id="riskFilter">
+                        <option value="">全リスクレベル</option>
+                        <option value="prohibited">禁止</option>
+                        <option value="high-risk">高リスク</option>
+                        <option value="gpai">汎用AI</option>
+                        <option value="gpai_systemic">システミックリスクGPAI</option>
+                        <option value="limited-risk">限定的リスク</option>
+                        <option value="minimal-risk">最小リスク</option>
+                        <option value="general">一般</option>
+                    </select>
+                </div>
+                <div id="articleList" class="article-list">
+                    <!-- Article items will be populated here -->
+                </div>
+            </aside>
+
+            <!-- Right Pane: Article Details -->
+            <main class="right-pane">
+                <div id="articleDetail" class="article-detail">
+                    <div class="welcome-message">
+                        <h2>欢迎使用欧州AI法条目エクスプローラー</h2>
+                        <p>左側のリストから条目を選択するか、「JSONデータ読み込み」ボタンでデータをロードしてください。</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal for Slide Preview -->
+    <div id="slideModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="slideContainer"></div>
+            <div class="slide-controls">
+                <button id="prevSlide" class="btn">前へ</button>
+                <span id="slideCounter"></span>
+                <button id="nextSlide" class="btn">次へ</button>
+                <button id="downloadSlides" class="btn btn-primary">HTMLダウンロード</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
