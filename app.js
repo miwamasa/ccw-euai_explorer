@@ -178,6 +178,46 @@ function renderArticleDetail() {
 
     const article = currentArticle;
 
+    // Initialize missing fields if they don't exist
+    if (!article.article_text) {
+        article.article_text = {
+            ja: '',
+            en: ''
+        };
+    }
+    if (!article.requirements) {
+        article.requirements = [];
+    }
+    if (!article.related_articles) {
+        article.related_articles = [];
+    }
+    if (!article.related_recitals) {
+        article.related_recitals = [];
+    }
+    if (!article.related_annexes) {
+        article.related_annexes = [];
+    }
+    if (!article.notes) {
+        article.notes = [];
+    }
+    if (!article.slide_pages) {
+        article.slide_pages = [];
+    }
+    if (!article.metadata) {
+        article.metadata = {
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString(),
+            version: "1.0",
+            author: "Unknown",
+            status: "draft",
+            tags: [],
+            comments: []
+        };
+    }
+    if (!article.metadata.tags) {
+        article.metadata.tags = [];
+    }
+
     articleDetail.innerHTML = `
         <div class="detail-header ${editMode ? 'edit-mode' : ''}">
             <h2>${article.article_number}: ${article.title_ja}</h2>
