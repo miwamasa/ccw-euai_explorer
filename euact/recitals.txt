@@ -1,0 +1,364 @@
+Recitals
+The articles of the Artifical Intelligence Act (AI Act) were adopted in consideration of the following recitals.
+
+(1)
+Purpose of the regulation
+(2)
+Regulation in balance with the values of the Union
+(3)
+Consistent and high level of protection
+(4)
+Artificial Intelligence
+(5)
+Risks and harms
+(6)
+Human-centric technology
+(7)
+High-risk AI systems
+(8)
+Framework for harmonised rules
+(9)
+Application of existing rights and remedies
+(10)
+Fundamental right to the protection of personal data
+(11)
+Liability of intermediary service providers of Directive 2000/31/EG
+(12)
+AI system
+(13)
+Deployer
+(14)
+Biometric data
+(15)
+Biometric identification
+(16)
+Biometric categorisation
+(17)
+Remote biometric identification system
+(18)
+Emotion recognition system
+(19)
+Publicly accessible space
+(20)
+Equipping with necessary notions
+(21)
+Application to providers and deployers
+(22)
+Application to third country operators
+(23)
+Application to Union institutions, bodies and other agencies
+(24)
+No application for military, defence or national security
+(25)
+No application to scientific research and development
+(26)
+Risk-based approach
+(27)
+Principles for trustworthy and ethical AI
+(28)
+Prohibition of harmful and misused practices
+(29)
+AI-enabled influence on human behaviour
+(30)
+AI systems for biometric categorisation
+(31)
+AI systems for social scoring
+(32)
+AI systems for 'real-time' remote biometric identification
+(33)
+Real-time' remote biometric identification systems for law enforcement purposes
+(34)
+Fundamental rights impact assessment
+(35)
+Authorisation obligation
+(36)
+Notification of the authorities
+(37)
+Adoption into national law
+(38)
+Use and processing of biometric data
+(39)
+Applicability of Directive (EU) 2016/680
+(40)
+Limited binding effect for Ireland
+(41)
+Limited binding effect for Denmark
+(42)
+Presumption of innocence in profiling
+(43)
+Banning AI facial recognition for mass surveillance
+(44)
+Risks and limits of emotion-recognising AI systems
+(45)
+Practices not permitted under EU law remain unaffected
+(46)
+Mandatory security requirements for high-risk AI systems in the EU
+(47)
+Risk minimisation in AI systems for health and safety
+(48)
+Fundamental rights and risk assessment of AI systems
+(49)
+Adaptation of regulations for high-risk AI systems in safety-critical products and systems
+(50)
+High-risk classification for AI security products
+(51)
+High-risk AI systems and product risk
+(52)
+Classification and regulation of high-risk AI systems
+(53)
+Supplementing human activity and pattern recognition
+(54)
+Risk assessment and use cases for biometric systems
+(55)
+Classification of high-risk AI systems in critical infrastructure
+(56)
+High-risk AI systems in education
+(57)
+High-risk AI systems in employment and human resources
+(58)
+High-risk AI systems deployment in social benefits, creditworthiness, and emergencies
+(59)
+High-risk AI systems in law enforcement
+(60)
+High-risk AI systems in migration and asylum
+(61)
+High-risk AI systems in the administration of justice
+(62)
+High-risk AI systems in elections
+(63)
+Lawfulness
+(64)
+Compliance with other Union law
+(65)
+Risk-management system
+(66)
+Scope of the requirements
+(67)
+Data governance and management practices
+(68)
+Access to high-quality data
+(69)
+Data privacy
+(70)
+Processing of special categories of personal data
+(71)
+Documentation of the development
+(72)
+Transparency for high-risk AI systems
+(73)
+Oversight by natural persons
+(74)
+Performance metrics
+(75)
+Resilience of high-risk AI systems
+(76)
+Cybersecurity appropriate to the risks
+(77)
+Cybersecurity requirements as set out in the regulation
+(78)
+Conformity assessment
+(79)
+Specification of the provider
+(80)
+Protection and equality of persons with disabilities
+(81)
+Establishing a quality management system
+(82)
+Level-playing field for operators
+(83)
+Clarification of the roles and obligations of operators along the value chain
+(84)
+Extension of obligations to distributors, importers, deployers or other third parties as providers of high-risk AI system
+(85)
+Cooperation of high-risk AI system providers along the value chain and with authorities
+(86)
+Obligation for former providers to cooperate
+(87)
+Obligations in the event of high-risk AI system as a safety component of a product
+(88)
+Written agreement on the provision of information
+(89)
+Release from value chain responsibilities and promotion of trustworthy AI
+(90)
+Development of voluntary model contract terms by the Commission
+(91)
+Definition of special responsibilities and obligations for deployers
+(92)
+Duty of employers to inform and consult employees or their representatives
+(93)
+Notification and information of persons by the deployer
+(94)
+Application of Directive (EU) 2016/680 when using AI systems for biometric identification for law enforcement purposes
+(95)
+Compliance with safeguards for subsequent remote biometric identification
+(96)
+Implementation of fundamental rights impact assessment and further follow-up measures
+(97)
+Precise definition of individual AI systems
+(98)
+Model determination based on parameters
+(99)
+Example of AI model with general-purpose
+(100)
+Further cases of AI models with a general-purpose
+(101)
+Transparency obligations for providers of general-purpose AI models
+(102)
+Transparency obligations for general-purpose AI models under open-source license
+(103)
+Defintion of the term AI model with general-purpose under open-source license
+(104)
+Exemptions for transparency obligations for general-purpose AI models under open-source license
+(105)
+Use of protected content for developing general-purpose AI models
+(106)
+Strategy for compliance with Union law for providers of general-purpose AI models
+(107)
+Transparency obligations for providers of general-purpose AI models concerning training data
+(108)
+Compliance monitoring by the AI Office
+(109)
+Proportionality of monitoring measures by the AI Office
+(110)
+Systemic risks of general-purpose AI models
+(111)
+Methodology for classifying AI models as systemically risky
+(112)
+Notification of general-purpose AI models with systemic risk at AI Office
+(113)
+Subsequent classificaton of AI models with systemic risk
+(114)
+Obligations for providers of general-purpose AI models with systemic risks
+(115)
+Mandatory reporting of risk events for providers of general-purpose AI models with systemic risks
+(116)
+Codes of practice for providers of general-purpose AI models with systemic risks
+(117)
+Implementation of harmonised codes of practice by the EU Commission
+(118)
+AI Act and Digital Services Act when embedding AI models in platforms and search engines
+(119)
+AI systems as intermediary services under the Digital Services Act
+(120)
+Obligation to identify systemic risks for AI models and intermediary services
+(121)
+Harmonised standards of the Commission
+(122)
+Compliance with cybersecurity requirements
+(123)
+Conformity assessment for high-risk AI systems
+(124)
+Conformity assessment according to relevant EU harmonisation legislation
+(125)
+Limited conformity assessment by third parties
+(126)
+Procedure for third-party conformity assessments
+(127)
+Recognition of conformity results from third countries
+(128)
+Reassessment of conformity in the event of significant system changes
+(129)
+CE marking for high-risk AI systems
+(130)
+Authorisation for high-risk AI systems in the public interest
+(131)
+Registration obligations for providers and deployers of high-risk AI systems in EU database
+(132)
+Transparency obligations for AI systems
+(133)
+Mandatory labeling of AI results
+(134)
+Obligation to disclose artificially generated content
+(135)
+Development of codes of conduct at Union level for AI content review
+(136)
+Importance of transparency for the implementation of the AI Regulation
+(137)
+Transparency is no substitute for lawfulness
+(138)
+Establishing of AI regulatory sandboxes to test innovative systems
+(139)
+Objectives of AI regulatory sandboxes
+(140)
+Legal basis for the use of personal data for the development of AI systems in the public interest
+(141)
+Requirements for testing high-risk AI systems under real-world conditions
+(142)
+Encourage the funding of research and development on AI solutions
+(143)
+Special consideration of the interests of SMEs
+(144)
+Promotion and protection of innovation
+(145)
+Minimising risk and facilitating the fulfillment of obligations
+(146)
+Facilitating the introduction of quality management for microenterprises
+(147)
+Facilitating access to testing and experimentation facilites for certain entities
+(148)
+Establishment of governance framework
+(149)
+Establishment of Regulation Board
+(150)
+Establishment of advisory forum
+(151)
+Establishment of scientific panel
+(152)
+Establishment of Union structures to support the testing of AI
+(153)
+Establishment of at least one notifying authority and one market surveillance authority per Member State
+(154)
+Independence, impartiality and confidentiality of the relevant national authorities
+(155)
+System for monitoring high-risk AI systems and system for reporting serious incidents
+(156)
+System of market surveillance and conformity of products
+(157)
+Position of national authorities or other bodies in relation to the regulations of the AI Act
+(158)
+Coherent application and enforcement of obligations for financial services
+(159)
+Necessary powers of market surveillance authorities for high-risk AI systems in the area of ​​biometric data
+(160)
+Joint activities of the market surveillance authorities of the Member States or the Commission
+(161)
+Clarification of responsibilities and competencies
+(162)
+Synergies at Union level
+(163)
+Support for the AI Office by scientific panel
+(164)
+Competencies of the AI Office
+(165)
+Voluntary codes of conduct
+(166)
+Safety of AI systems that are not high-risk
+(167)
+Trustful cooperation of competent authorities
+(168)
+Ensuring the implementation of the provisions
+(169)
+Administrative fines
+(170)
+Legal remedies for natural and legal persons
+(171)
+Explanation on the use of high-risk systems
+(172)
+Protection of whistleblowers
+(173)
+Delegation of powers to the Commission
+(174)
+Regular evaluation and review
+(175)
+Implementing powers of the Commission
+(176)
+Principle of subsidiarity and principle of proportionality
+(177)
+Ensuring continuity
+(178)
+Voluntary compliance
+(179)
+Date of validity
+(180)
+Adoption of the regulation
+AI Act
