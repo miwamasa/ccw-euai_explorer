@@ -158,6 +158,9 @@ except ValidationError as e:
   - サブ項目の編集機能に対応
   - summaryフィールドを追加（日英、最大3行）
   - euact/*.txtファイルからsummaryとarticle_textを自動抽出
+  - euact/recitals.txtから180個の前文タイトルを抽出
+  - related_recitalsにtitle_ja/title_enフィールドを追加
+  - summaryの表示順序を日本語→英語に統一
 
 ## ライセンス
 

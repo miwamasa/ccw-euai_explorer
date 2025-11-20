@@ -47,39 +47,51 @@
       "related_recitals": [
         {
           "recital_number": "前文1",
-          "summary_ja": "前文1の内容（要約）",
-          "summary_en": "Content of 前文1",
-          "relevance": "1条に関連"
+          "summary_ja": "",
+          "summary_en": "Purpose of the regulation",
+          "relevance": "1条に関連",
+          "title_en": "Purpose of the regulation",
+          "title_ja": ""
         },
         {
           "recital_number": "前文2",
-          "summary_ja": "前文2の内容（要約）",
-          "summary_en": "Content of 前文2",
-          "relevance": "1条に関連"
+          "summary_ja": "",
+          "summary_en": "Regulation in balance with the values of the Union",
+          "relevance": "1条に関連",
+          "title_en": "Regulation in balance with the values of the Union",
+          "title_ja": ""
         },
         {
           "recital_number": "前文3",
-          "summary_ja": "前文3の内容（要約）",
-          "summary_en": "Content of 前文3",
-          "relevance": "1条に関連"
+          "summary_ja": "",
+          "summary_en": "Consistent and high level of protection",
+          "relevance": "1条に関連",
+          "title_en": "Consistent and high level of protection",
+          "title_ja": ""
         },
         {
           "recital_number": "前文6",
-          "summary_ja": "前文6の内容（要約）",
-          "summary_en": "Content of 前文6",
-          "relevance": "1条に関連"
+          "summary_ja": "",
+          "summary_en": "Human-centric technology",
+          "relevance": "1条に関連",
+          "title_en": "Human-centric technology",
+          "title_ja": ""
         },
         {
           "recital_number": "前文7",
-          "summary_ja": "前文7の内容（要約）",
-          "summary_en": "Content of 前文7",
-          "relevance": "1条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk AI systems",
+          "relevance": "1条に関連",
+          "title_en": "High-risk AI systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文8",
-          "summary_ja": "前文8の内容（要約）",
-          "summary_en": "Content of 前文8",
-          "relevance": "1条に関連"
+          "summary_ja": "",
+          "summary_en": "Framework for harmonised rules",
+          "relevance": "1条に関連",
+          "title_en": "Framework for harmonised rules",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -156,69 +168,91 @@
       "related_recitals": [
         {
           "recital_number": "前文3",
-          "summary_ja": "前文3の内容（要約）",
-          "summary_en": "Content of 前文3",
-          "relevance": "2条に関連"
+          "summary_ja": "",
+          "summary_en": "Consistent and high level of protection",
+          "relevance": "2条に関連",
+          "title_en": "Consistent and high level of protection",
+          "title_ja": ""
         },
         {
           "recital_number": "前文21",
-          "summary_ja": "前文21の内容（要約）",
-          "summary_en": "Content of 前文21",
-          "relevance": "2条に関連"
+          "summary_ja": "",
+          "summary_en": "Application to providers and deployers",
+          "relevance": "2条に関連",
+          "title_en": "Application to providers and deployers",
+          "title_ja": ""
         },
         {
           "recital_number": "前文22",
-          "summary_ja": "前文22の内容（要約）",
-          "summary_en": "Content of 前文22",
-          "relevance": "2条に関連"
+          "summary_ja": "",
+          "summary_en": "Application to third country operators",
+          "relevance": "2条に関連",
+          "title_en": "Application to third country operators",
+          "title_ja": ""
         },
         {
           "recital_number": "前文23",
-          "summary_ja": "前文23の内容（要約）",
-          "summary_en": "Content of 前文23",
-          "relevance": "2条に関連"
+          "summary_ja": "",
+          "summary_en": "Application to Union institutions, bodies and other agencies",
+          "relevance": "2条に関連",
+          "title_en": "Application to Union institutions, bodies and other agencies",
+          "title_ja": ""
         },
         {
           "recital_number": "前文24",
-          "summary_ja": "前文24の内容（要約）",
-          "summary_en": "Content of 前文24",
-          "relevance": "2条に関連"
+          "summary_ja": "",
+          "summary_en": "No application for military, defence or national security",
+          "relevance": "2条に関連",
+          "title_en": "No application for military, defence or national security",
+          "title_ja": ""
         },
         {
           "recital_number": "前文25",
-          "summary_ja": "前文25の内容（要約）",
-          "summary_en": "Content of 前文25",
-          "relevance": "2条に関連"
+          "summary_ja": "",
+          "summary_en": "No application to scientific research and development",
+          "relevance": "2条に関連",
+          "title_en": "No application to scientific research and development",
+          "title_ja": ""
         },
         {
           "recital_number": "前文166",
-          "summary_ja": "前文166の内容（要約）",
-          "summary_en": "Content of 前文166",
-          "relevance": "2条に関連"
+          "summary_ja": "",
+          "summary_en": "Safety of AI systems that are not high-risk",
+          "relevance": "2条に関連",
+          "title_en": "Safety of AI systems that are not high-risk",
+          "title_ja": ""
         },
         {
           "recital_number": "前文97",
-          "summary_ja": "前文97の内容（要約）",
-          "summary_en": "Content of 前文97",
-          "relevance": "2条に関連"
+          "summary_ja": "",
+          "summary_en": "Precise definition of individual AI systems",
+          "relevance": "2条に関連",
+          "title_en": "Precise definition of individual AI systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文9",
-          "summary_ja": "前文9の内容（要約）",
-          "summary_en": "Content of 前文9",
-          "relevance": "2条に関連"
+          "summary_ja": "",
+          "summary_en": "Application of existing rights and remedies",
+          "relevance": "2条に関連",
+          "title_en": "Application of existing rights and remedies",
+          "title_ja": ""
         },
         {
           "recital_number": "前文10",
-          "summary_ja": "前文10の内容（要約）",
-          "summary_en": "Content of 前文10",
-          "relevance": "2条に関連"
+          "summary_ja": "",
+          "summary_en": "Fundamental right to the protection of personal data",
+          "relevance": "2条に関連",
+          "title_en": "Fundamental right to the protection of personal data",
+          "title_ja": ""
         },
         {
           "recital_number": "前文11",
-          "summary_ja": "前文11の内容（要約）",
-          "summary_en": "Content of 前文11",
-          "relevance": "2条に関連"
+          "summary_ja": "",
+          "summary_en": "Liability of intermediary service providers of Directive 2000/31/EG",
+          "relevance": "2条に関連",
+          "title_en": "Liability of intermediary service providers of Directive 2000/31/EG",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -286,93 +320,123 @@
       "related_recitals": [
         {
           "recital_number": "前文12",
-          "summary_ja": "前文12の内容（要約）",
-          "summary_en": "Content of 前文12",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "AI system",
+          "relevance": "3条に関連",
+          "title_en": "AI system",
+          "title_ja": ""
         },
         {
           "recital_number": "前文13",
-          "summary_ja": "前文13の内容（要約）",
-          "summary_en": "Content of 前文13",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Deployer",
+          "relevance": "3条に関連",
+          "title_en": "Deployer",
+          "title_ja": ""
         },
         {
           "recital_number": "前文14",
-          "summary_ja": "前文14の内容（要約）",
-          "summary_en": "Content of 前文14",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Biometric data",
+          "relevance": "3条に関連",
+          "title_en": "Biometric data",
+          "title_ja": ""
         },
         {
           "recital_number": "前文15",
-          "summary_ja": "前文15の内容（要約）",
-          "summary_en": "Content of 前文15",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Biometric identification",
+          "relevance": "3条に関連",
+          "title_en": "Biometric identification",
+          "title_ja": ""
         },
         {
           "recital_number": "前文16",
-          "summary_ja": "前文16の内容（要約）",
-          "summary_en": "Content of 前文16",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Biometric categorisation",
+          "relevance": "3条に関連",
+          "title_en": "Biometric categorisation",
+          "title_ja": ""
         },
         {
           "recital_number": "前文17",
-          "summary_ja": "前文17の内容（要約）",
-          "summary_en": "Content of 前文17",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Remote biometric identification system",
+          "relevance": "3条に関連",
+          "title_en": "Remote biometric identification system",
+          "title_ja": ""
         },
         {
           "recital_number": "前文18",
-          "summary_ja": "前文18の内容（要約）",
-          "summary_en": "Content of 前文18",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Emotion recognition system",
+          "relevance": "3条に関連",
+          "title_en": "Emotion recognition system",
+          "title_ja": ""
         },
         {
           "recital_number": "前文19",
-          "summary_ja": "前文19の内容（要約）",
-          "summary_en": "Content of 前文19",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Publicly accessible space",
+          "relevance": "3条に関連",
+          "title_en": "Publicly accessible space",
+          "title_ja": ""
         },
         {
           "recital_number": "前文26",
-          "summary_ja": "前文26の内容（要約）",
-          "summary_en": "Content of 前文26",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Risk-based approach",
+          "relevance": "3条に関連",
+          "title_en": "Risk-based approach",
+          "title_ja": ""
         },
         {
           "recital_number": "前文97",
-          "summary_ja": "前文97の内容（要約）",
-          "summary_en": "Content of 前文97",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Precise definition of individual AI systems",
+          "relevance": "3条に関連",
+          "title_en": "Precise definition of individual AI systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文98",
-          "summary_ja": "前文98の内容（要約）",
-          "summary_en": "Content of 前文98",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Model determination based on parameters",
+          "relevance": "3条に関連",
+          "title_en": "Model determination based on parameters",
+          "title_ja": ""
         },
         {
           "recital_number": "前文99",
-          "summary_ja": "前文99の内容（要約）",
-          "summary_en": "Content of 前文99",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Example of AI model with general-purpose",
+          "relevance": "3条に関連",
+          "title_en": "Example of AI model with general-purpose",
+          "title_ja": ""
         },
         {
           "recital_number": "前文100",
-          "summary_ja": "前文100の内容（要約）",
-          "summary_en": "Content of 前文100",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Further cases of AI models with a general-purpose",
+          "relevance": "3条に関連",
+          "title_en": "Further cases of AI models with a general-purpose",
+          "title_ja": ""
         },
         {
           "recital_number": "前文110",
-          "summary_ja": "前文110の内容（要約）",
-          "summary_en": "Content of 前文110",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Systemic risks of general-purpose AI models",
+          "relevance": "3条に関連",
+          "title_en": "Systemic risks of general-purpose AI models",
+          "title_ja": ""
         },
         {
           "recital_number": "前文128",
-          "summary_ja": "前文128の内容（要約）",
-          "summary_en": "Content of 前文128",
-          "relevance": "3条に関連"
+          "summary_ja": "",
+          "summary_en": "Reassessment of conformity in the event of significant system changes",
+          "relevance": "3条に関連",
+          "title_en": "Reassessment of conformity in the event of significant system changes",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -430,9 +494,11 @@
       "related_recitals": [
         {
           "recital_number": "前文20",
-          "summary_ja": "前文20の内容（要約）",
-          "summary_en": "Content of 前文20",
-          "relevance": "4条に関連"
+          "summary_ja": "",
+          "summary_en": "Equipping with necessary notions",
+          "relevance": "4条に関連",
+          "title_en": "Equipping with necessary notions",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -576,123 +642,163 @@
       "related_recitals": [
         {
           "recital_number": "前文3",
-          "summary_ja": "前文3の内容（要約）",
-          "summary_en": "Content of 前文3",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Consistent and high level of protection",
+          "relevance": "5条に関連",
+          "title_en": "Consistent and high level of protection",
+          "title_ja": ""
         },
         {
           "recital_number": "前文26",
-          "summary_ja": "前文26の内容（要約）",
-          "summary_en": "Content of 前文26",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Risk-based approach",
+          "relevance": "5条に関連",
+          "title_en": "Risk-based approach",
+          "title_ja": ""
         },
         {
           "recital_number": "前文28",
-          "summary_ja": "前文28の内容（要約）",
-          "summary_en": "Content of 前文28",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Prohibition of harmful and misused practices",
+          "relevance": "5条に関連",
+          "title_en": "Prohibition of harmful and misused practices",
+          "title_ja": ""
         },
         {
           "recital_number": "前文29",
-          "summary_ja": "前文29の内容（要約）",
-          "summary_en": "Content of 前文29",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "AI-enabled influence on human behaviour",
+          "relevance": "5条に関連",
+          "title_en": "AI-enabled influence on human behaviour",
+          "title_ja": ""
         },
         {
           "recital_number": "前文30",
-          "summary_ja": "前文30の内容（要約）",
-          "summary_en": "Content of 前文30",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "AI systems for biometric categorisation",
+          "relevance": "5条に関連",
+          "title_en": "AI systems for biometric categorisation",
+          "title_ja": ""
         },
         {
           "recital_number": "前文31",
-          "summary_ja": "前文31の内容（要約）",
-          "summary_en": "Content of 前文31",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "AI systems for social scoring",
+          "relevance": "5条に関連",
+          "title_en": "AI systems for social scoring",
+          "title_ja": ""
         },
         {
           "recital_number": "前文32",
-          "summary_ja": "前文32の内容（要約）",
-          "summary_en": "Content of 前文32",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "AI systems for 'real-time' remote biometric identification",
+          "relevance": "5条に関連",
+          "title_en": "AI systems for 'real-time' remote biometric identification",
+          "title_ja": ""
         },
         {
           "recital_number": "前文33",
-          "summary_ja": "前文33の内容（要約）",
-          "summary_en": "Content of 前文33",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Real-time' remote biometric identification systems for law enforcement purposes",
+          "relevance": "5条に関連",
+          "title_en": "Real-time' remote biometric identification systems for law enforcement purposes",
+          "title_ja": ""
         },
         {
           "recital_number": "前文34",
-          "summary_ja": "前文34の内容（要約）",
-          "summary_en": "Content of 前文34",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Fundamental rights impact assessment",
+          "relevance": "5条に関連",
+          "title_en": "Fundamental rights impact assessment",
+          "title_ja": ""
         },
         {
           "recital_number": "前文35",
-          "summary_ja": "前文35の内容（要約）",
-          "summary_en": "Content of 前文35",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Authorisation obligation",
+          "relevance": "5条に関連",
+          "title_en": "Authorisation obligation",
+          "title_ja": ""
         },
         {
           "recital_number": "前文36",
-          "summary_ja": "前文36の内容（要約）",
-          "summary_en": "Content of 前文36",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Notification of the authorities",
+          "relevance": "5条に関連",
+          "title_en": "Notification of the authorities",
+          "title_ja": ""
         },
         {
           "recital_number": "前文37",
-          "summary_ja": "前文37の内容（要約）",
-          "summary_en": "Content of 前文37",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Adoption into national law",
+          "relevance": "5条に関連",
+          "title_en": "Adoption into national law",
+          "title_ja": ""
         },
         {
           "recital_number": "前文38",
-          "summary_ja": "前文38の内容（要約）",
-          "summary_en": "Content of 前文38",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Use and processing of biometric data",
+          "relevance": "5条に関連",
+          "title_en": "Use and processing of biometric data",
+          "title_ja": ""
         },
         {
           "recital_number": "前文39",
-          "summary_ja": "前文39の内容（要約）",
-          "summary_en": "Content of 前文39",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Applicability of Directive (EU) 2016/680",
+          "relevance": "5条に関連",
+          "title_en": "Applicability of Directive (EU) 2016/680",
+          "title_ja": ""
         },
         {
           "recital_number": "前文40",
-          "summary_ja": "前文40の内容（要約）",
-          "summary_en": "Content of 前文40",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Limited binding effect for Ireland",
+          "relevance": "5条に関連",
+          "title_en": "Limited binding effect for Ireland",
+          "title_ja": ""
         },
         {
           "recital_number": "前文41",
-          "summary_ja": "前文41の内容（要約）",
-          "summary_en": "Content of 前文41",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Limited binding effect for Denmark",
+          "relevance": "5条に関連",
+          "title_en": "Limited binding effect for Denmark",
+          "title_ja": ""
         },
         {
           "recital_number": "前文42",
-          "summary_ja": "前文42の内容（要約）",
-          "summary_en": "Content of 前文42",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Presumption of innocence in profiling",
+          "relevance": "5条に関連",
+          "title_en": "Presumption of innocence in profiling",
+          "title_ja": ""
         },
         {
           "recital_number": "前文43",
-          "summary_ja": "前文43の内容（要約）",
-          "summary_en": "Content of 前文43",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Banning AI facial recognition for mass surveillance",
+          "relevance": "5条に関連",
+          "title_en": "Banning AI facial recognition for mass surveillance",
+          "title_ja": ""
         },
         {
           "recital_number": "前文44",
-          "summary_ja": "前文44の内容（要約）",
-          "summary_en": "Content of 前文44",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Risks and limits of emotion-recognising AI systems",
+          "relevance": "5条に関連",
+          "title_en": "Risks and limits of emotion-recognising AI systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文45",
-          "summary_ja": "前文45の内容（要約）",
-          "summary_en": "Content of 前文45",
-          "relevance": "5条に関連"
+          "summary_ja": "",
+          "summary_en": "Practices not permitted under EU law remain unaffected",
+          "relevance": "5条に関連",
+          "title_en": "Practices not permitted under EU law remain unaffected",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -847,105 +953,139 @@
       "related_recitals": [
         {
           "recital_number": "前文46",
-          "summary_ja": "前文46の内容（要約）",
-          "summary_en": "Content of 前文46",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "Mandatory security requirements for high-risk AI systems in the EU",
+          "relevance": "6条に関連",
+          "title_en": "Mandatory security requirements for high-risk AI systems in the EU",
+          "title_ja": ""
         },
         {
           "recital_number": "前文47",
-          "summary_ja": "前文47の内容（要約）",
-          "summary_en": "Content of 前文47",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "Risk minimisation in AI systems for health and safety",
+          "relevance": "6条に関連",
+          "title_en": "Risk minimisation in AI systems for health and safety",
+          "title_ja": ""
         },
         {
           "recital_number": "前文48",
-          "summary_ja": "前文48の内容（要約）",
-          "summary_en": "Content of 前文48",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "Fundamental rights and risk assessment of AI systems",
+          "relevance": "6条に関連",
+          "title_en": "Fundamental rights and risk assessment of AI systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文50",
-          "summary_ja": "前文50の内容（要約）",
-          "summary_en": "Content of 前文50",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk classification for AI security products",
+          "relevance": "6条に関連",
+          "title_en": "High-risk classification for AI security products",
+          "title_ja": ""
         },
         {
           "recital_number": "前文51",
-          "summary_ja": "前文51の内容（要約）",
-          "summary_en": "Content of 前文51",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk AI systems and product risk",
+          "relevance": "6条に関連",
+          "title_en": "High-risk AI systems and product risk",
+          "title_ja": ""
         },
         {
           "recital_number": "前文52",
-          "summary_ja": "前文52の内容（要約）",
-          "summary_en": "Content of 前文52",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "Classification and regulation of high-risk AI systems",
+          "relevance": "6条に関連",
+          "title_en": "Classification and regulation of high-risk AI systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文53",
-          "summary_ja": "前文53の内容（要約）",
-          "summary_en": "Content of 前文53",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "Supplementing human activity and pattern recognition",
+          "relevance": "6条に関連",
+          "title_en": "Supplementing human activity and pattern recognition",
+          "title_ja": ""
         },
         {
           "recital_number": "前文54",
-          "summary_ja": "前文54の内容（要約）",
-          "summary_en": "Content of 前文54",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "Risk assessment and use cases for biometric systems",
+          "relevance": "6条に関連",
+          "title_en": "Risk assessment and use cases for biometric systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文55",
-          "summary_ja": "前文55の内容（要約）",
-          "summary_en": "Content of 前文55",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "Classification of high-risk AI systems in critical infrastructure",
+          "relevance": "6条に関連",
+          "title_en": "Classification of high-risk AI systems in critical infrastructure",
+          "title_ja": ""
         },
         {
           "recital_number": "前文56",
-          "summary_ja": "前文56の内容（要約）",
-          "summary_en": "Content of 前文56",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk AI systems in education",
+          "relevance": "6条に関連",
+          "title_en": "High-risk AI systems in education",
+          "title_ja": ""
         },
         {
           "recital_number": "前文57",
-          "summary_ja": "前文57の内容（要約）",
-          "summary_en": "Content of 前文57",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk AI systems in employment and human resources",
+          "relevance": "6条に関連",
+          "title_en": "High-risk AI systems in employment and human resources",
+          "title_ja": ""
         },
         {
           "recital_number": "前文58",
-          "summary_ja": "前文58の内容（要約）",
-          "summary_en": "Content of 前文58",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk AI systems deployment in social benefits, creditworthiness, and emergencies",
+          "relevance": "6条に関連",
+          "title_en": "High-risk AI systems deployment in social benefits, creditworthiness, and emergencies",
+          "title_ja": ""
         },
         {
           "recital_number": "前文59",
-          "summary_ja": "前文59の内容（要約）",
-          "summary_en": "Content of 前文59",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk AI systems in law enforcement",
+          "relevance": "6条に関連",
+          "title_en": "High-risk AI systems in law enforcement",
+          "title_ja": ""
         },
         {
           "recital_number": "前文60",
-          "summary_ja": "前文60の内容（要約）",
-          "summary_en": "Content of 前文60",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk AI systems in migration and asylum",
+          "relevance": "6条に関連",
+          "title_en": "High-risk AI systems in migration and asylum",
+          "title_ja": ""
         },
         {
           "recital_number": "前文61",
-          "summary_ja": "前文61の内容（要約）",
-          "summary_en": "Content of 前文61",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk AI systems in the administration of justice",
+          "relevance": "6条に関連",
+          "title_en": "High-risk AI systems in the administration of justice",
+          "title_ja": ""
         },
         {
           "recital_number": "前文62",
-          "summary_ja": "前文62の内容（要約）",
-          "summary_en": "Content of 前文62",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk AI systems in elections",
+          "relevance": "6条に関連",
+          "title_en": "High-risk AI systems in elections",
+          "title_ja": ""
         },
         {
           "recital_number": "前文63",
-          "summary_ja": "前文63の内容（要約）",
-          "summary_en": "Content of 前文63",
-          "relevance": "6条に関連"
+          "summary_ja": "",
+          "summary_en": "Lawfulness",
+          "relevance": "6条に関連",
+          "title_en": "Lawfulness",
+          "title_ja": ""
         }
       ],
       "related_annexes": [
@@ -1191,27 +1331,35 @@
       "related_recitals": [
         {
           "recital_number": "前文66",
-          "summary_ja": "高リスクAIシステムのリスク管理と透明性に関する要件",
-          "summary_en": "Requirements for risk management and transparency of high-risk AI systems",
-          "relevance": "リスク管理システムの必要性を説明"
+          "summary_ja": "",
+          "summary_en": "Scope of the requirements",
+          "relevance": "リスク管理システムの必要性を説明",
+          "title_en": "Scope of the requirements",
+          "title_ja": ""
         },
         {
           "recital_number": "前文71",
-          "summary_ja": "高リスクAIシステムの開発と運用に関する包括的な情報の重要性と記録保持の必要性",
-          "summary_en": "Importance of comprehensive information on development and operation of high-risk AI systems",
-          "relevance": "リスク管理の文書化の重要性"
+          "summary_ja": "",
+          "summary_en": "Documentation of the development",
+          "relevance": "リスク管理の文書化の重要性",
+          "title_en": "Documentation of the development",
+          "title_ja": ""
         },
         {
           "recital_number": "前文64",
-          "summary_ja": "前文64の内容（要約）",
-          "summary_en": "Content of 前文64",
-          "relevance": "9条に関連"
+          "summary_ja": "",
+          "summary_en": "Compliance with other Union law",
+          "relevance": "9条に関連",
+          "title_en": "Compliance with other Union law",
+          "title_ja": ""
         },
         {
           "recital_number": "前文65",
-          "summary_ja": "前文65の内容（要約）",
-          "summary_en": "Content of 前文65",
-          "relevance": "9条に関連"
+          "summary_ja": "",
+          "summary_en": "Risk-management system",
+          "relevance": "9条に関連",
+          "title_en": "Risk-management system",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -1412,51 +1560,67 @@
       "related_recitals": [
         {
           "recital_number": "前文66",
-          "summary_ja": "高リスクAIシステムに対する、データ品質の要求",
-          "summary_en": "Data quality requirements for high-risk AI",
-          "relevance": "データ品質の重要性"
+          "summary_ja": "",
+          "summary_en": "Scope of the requirements",
+          "relevance": "データ品質の重要性",
+          "title_en": "Scope of the requirements",
+          "title_ja": ""
         },
         {
           "recital_number": "前文67",
-          "summary_ja": "高品質データの必要性",
-          "summary_en": "Need for high-quality data",
-          "relevance": "データ品質基準の根拠"
+          "summary_ja": "",
+          "summary_en": "Data governance and management practices",
+          "relevance": "データ品質基準の根拠",
+          "title_en": "Data governance and management practices",
+          "title_ja": ""
         },
         {
           "recital_number": "前文69",
-          "summary_ja": "プライバシー、個人情報保護",
-          "summary_en": "Privacy and personal data protection",
-          "relevance": "個人データ処理の要件"
+          "summary_ja": "",
+          "summary_en": "Data privacy",
+          "relevance": "個人データ処理の要件",
+          "title_en": "Data privacy",
+          "title_ja": ""
         },
         {
           "recital_number": "前文71",
-          "summary_ja": "データおよび処理に関する記録の作成と保持",
-          "summary_en": " keeping records and the availability of technical documentation",
-          "relevance": "データ記録の根拠"
+          "summary_ja": "",
+          "summary_en": "Documentation of the development",
+          "relevance": "データ記録の根拠",
+          "title_en": "Documentation of the development",
+          "title_ja": ""
         },
         {
           "recital_number": "前文68",
-          "summary_ja": "前文68の内容（要約）",
-          "summary_en": "Content of 前文68",
-          "relevance": "10条に関連"
+          "summary_ja": "",
+          "summary_en": "Access to high-quality data",
+          "relevance": "10条に関連",
+          "title_en": "Access to high-quality data",
+          "title_ja": ""
         },
         {
           "recital_number": "前文70",
-          "summary_ja": "前文70の内容（要約）",
-          "summary_en": "Content of 前文70",
-          "relevance": "10条に関連"
+          "summary_ja": "",
+          "summary_en": "Processing of special categories of personal data",
+          "relevance": "10条に関連",
+          "title_en": "Processing of special categories of personal data",
+          "title_ja": ""
         },
         {
           "recital_number": "前文76",
-          "summary_ja": "前文76の内容（要約）",
-          "summary_en": "Content of 前文76",
-          "relevance": "10条に関連"
+          "summary_ja": "",
+          "summary_en": "Cybersecurity appropriate to the risks",
+          "relevance": "10条に関連",
+          "title_en": "Cybersecurity appropriate to the risks",
+          "title_ja": ""
         },
         {
           "recital_number": "前文115",
-          "summary_ja": "前文115の内容（要約）",
-          "summary_en": "Content of 前文115",
-          "relevance": "10条に関連"
+          "summary_ja": "",
+          "summary_en": "Mandatory reporting of risk events for providers of general-purpose AI models with systemic risks",
+          "relevance": "10条に関連",
+          "title_en": "Mandatory reporting of risk events for providers of general-purpose AI models with systemic risks",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -1571,15 +1735,19 @@
       "related_recitals": [
         {
           "recital_number": "前文66",
-          "summary_ja": "前文66の内容（要約）",
-          "summary_en": "Content of 前文66",
-          "relevance": "11条に関連"
+          "summary_ja": "",
+          "summary_en": "Scope of the requirements",
+          "relevance": "11条に関連",
+          "title_en": "Scope of the requirements",
+          "title_ja": ""
         },
         {
           "recital_number": "前文71",
-          "summary_ja": "前文71の内容（要約）",
-          "summary_en": "Content of 前文71",
-          "relevance": "11条に関連"
+          "summary_ja": "",
+          "summary_en": "Documentation of the development",
+          "relevance": "11条に関連",
+          "title_en": "Documentation of the development",
+          "title_ja": ""
         }
       ],
       "related_annexes": [
@@ -1718,21 +1886,27 @@
       "related_recitals": [
         {
           "recital_number": "前文71",
-          "summary_ja": "データおよび処理に関する記録の作成と保持",
-          "summary_en": "Record keeping requirements",
-          "relevance": "記録保持の必要性"
+          "summary_ja": "",
+          "summary_en": "Documentation of the development",
+          "relevance": "記録保持の必要性",
+          "title_en": "Documentation of the development",
+          "title_ja": ""
         },
         {
           "recital_number": "前文66",
-          "summary_ja": "前文66の内容（要約）",
-          "summary_en": "Content of 前文66",
-          "relevance": "12条に関連"
+          "summary_ja": "",
+          "summary_en": "Scope of the requirements",
+          "relevance": "12条に関連",
+          "title_en": "Scope of the requirements",
+          "title_ja": ""
         },
         {
           "recital_number": "前文131",
-          "summary_ja": "前文131の内容（要約）",
-          "summary_en": "Content of 前文131",
-          "relevance": "12条に関連"
+          "summary_ja": "",
+          "summary_en": "Registration obligations for providers and deployers of high-risk AI systems in EU database",
+          "relevance": "12条に関連",
+          "title_en": "Registration obligations for providers and deployers of high-risk AI systems in EU database",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -1846,81 +2020,107 @@
       "related_recitals": [
         {
           "recital_number": "前文72",
-          "summary_ja": "高リスクAIシステムの透明性確保と使用者への情報提供の重要性",
-          "summary_en": "Importance of transparency and information provision",
-          "relevance": "透明性要件の根拠"
+          "summary_ja": "",
+          "summary_en": "Transparency for high-risk AI systems",
+          "relevance": "透明性要件の根拠",
+          "title_en": "Transparency for high-risk AI systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文27",
-          "summary_ja": "前文27の内容（要約）",
-          "summary_en": "Content of 前文27",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "Principles for trustworthy and ethical AI",
+          "relevance": "13条に関連",
+          "title_en": "Principles for trustworthy and ethical AI",
+          "title_ja": ""
         },
         {
           "recital_number": "前文59",
-          "summary_ja": "前文59の内容（要約）",
-          "summary_en": "Content of 前文59",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk AI systems in law enforcement",
+          "relevance": "13条に関連",
+          "title_en": "High-risk AI systems in law enforcement",
+          "title_ja": ""
         },
         {
           "recital_number": "前文60",
-          "summary_ja": "前文60の内容（要約）",
-          "summary_en": "Content of 前文60",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "High-risk AI systems in migration and asylum",
+          "relevance": "13条に関連",
+          "title_en": "High-risk AI systems in migration and asylum",
+          "title_ja": ""
         },
         {
           "recital_number": "前文66",
-          "summary_ja": "前文66の内容（要約）",
-          "summary_en": "Content of 前文66",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "Scope of the requirements",
+          "relevance": "13条に関連",
+          "title_en": "Scope of the requirements",
+          "title_ja": ""
         },
         {
           "recital_number": "前文67",
-          "summary_ja": "前文67の内容（要約）",
-          "summary_en": "Content of 前文67",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "Data governance and management practices",
+          "relevance": "13条に関連",
+          "title_en": "Data governance and management practices",
+          "title_ja": ""
         },
         {
           "recital_number": "前文71",
-          "summary_ja": "前文71の内容（要約）",
-          "summary_en": "Content of 前文71",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "Documentation of the development",
+          "relevance": "13条に関連",
+          "title_en": "Documentation of the development",
+          "title_ja": ""
         },
         {
           "recital_number": "前文74",
-          "summary_ja": "前文74の内容（要約）",
-          "summary_en": "Content of 前文74",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "Performance metrics",
+          "relevance": "13条に関連",
+          "title_en": "Performance metrics",
+          "title_ja": ""
         },
         {
           "recital_number": "前文104",
-          "summary_ja": "前文104の内容（要約）",
-          "summary_en": "Content of 前文104",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "Exemptions for transparency obligations for general-purpose AI models under open-source license",
+          "relevance": "13条に関連",
+          "title_en": "Exemptions for transparency obligations for general-purpose AI models under open-source license",
+          "title_ja": ""
         },
         {
           "recital_number": "前文107",
-          "summary_ja": "前文107の内容（要約）",
-          "summary_en": "Content of 前文107",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "Transparency obligations for providers of general-purpose AI models concerning training data",
+          "relevance": "13条に関連",
+          "title_en": "Transparency obligations for providers of general-purpose AI models concerning training data",
+          "title_ja": ""
         },
         {
           "recital_number": "前文131",
-          "summary_ja": "前文131の内容（要約）",
-          "summary_en": "Content of 前文131",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "Registration obligations for providers and deployers of high-risk AI systems in EU database",
+          "relevance": "13条に関連",
+          "title_en": "Registration obligations for providers and deployers of high-risk AI systems in EU database",
+          "title_ja": ""
         },
         {
           "recital_number": "前文132",
-          "summary_ja": "前文132の内容（要約）",
-          "summary_en": "Content of 前文132",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "Transparency obligations for AI systems",
+          "relevance": "13条に関連",
+          "title_en": "Transparency obligations for AI systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文137",
-          "summary_ja": "前文137の内容（要約）",
-          "summary_en": "Content of 前文137",
-          "relevance": "13条に関連"
+          "summary_ja": "",
+          "summary_en": "Transparency is no substitute for lawfulness",
+          "relevance": "13条に関連",
+          "title_en": "Transparency is no substitute for lawfulness",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -2060,27 +2260,35 @@
       "related_recitals": [
         {
           "recital_number": "前文73",
-          "summary_ja": "高リスクAIシステムの人間による監視と介入の必要性と要件",
-          "summary_en": "Requirements for human oversight",
-          "relevance": "人間監視の必要性"
+          "summary_ja": "",
+          "summary_en": "Oversight by natural persons",
+          "relevance": "人間監視の必要性",
+          "title_en": "Oversight by natural persons",
+          "title_ja": ""
         },
         {
           "recital_number": "前文27",
-          "summary_ja": "前文27の内容（要約）",
-          "summary_en": "Content of 前文27",
-          "relevance": "14条に関連"
+          "summary_ja": "",
+          "summary_en": "Principles for trustworthy and ethical AI",
+          "relevance": "14条に関連",
+          "title_en": "Principles for trustworthy and ethical AI",
+          "title_ja": ""
         },
         {
           "recital_number": "前文66",
-          "summary_ja": "前文66の内容（要約）",
-          "summary_en": "Content of 前文66",
-          "relevance": "14条に関連"
+          "summary_ja": "",
+          "summary_en": "Scope of the requirements",
+          "relevance": "14条に関連",
+          "title_en": "Scope of the requirements",
+          "title_ja": ""
         },
         {
           "recital_number": "前文91",
-          "summary_ja": "前文91の内容（要約）",
-          "summary_en": "Content of 前文91",
-          "relevance": "14条に関連"
+          "summary_ja": "",
+          "summary_en": "Definition of special responsibilities and obligations for deployers",
+          "relevance": "14条に関連",
+          "title_en": "Definition of special responsibilities and obligations for deployers",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -2215,9 +2423,11 @@
       "related_recitals": [
         {
           "recital_number": "前文74",
-          "summary_ja": ":高リスクAIシステムのライフサイクル全体にわたる一貫した性能と適切な精度、堅牢性、サイバーセキュリティの確保の必要性",
-          "summary_en": "New related recital",
-          "relevance": "関連性の説明"
+          "summary_ja": "",
+          "summary_en": "Performance metrics",
+          "relevance": "関連性の説明",
+          "title_en": "Performance metrics",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -2402,123 +2612,163 @@
       "related_recitals": [
         {
           "recital_number": "前文79",
-          "summary_ja": "前文79の内容（要約）",
-          "summary_en": "Content of 前文79",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Specification of the provider",
+          "relevance": "16条に関連",
+          "title_en": "Specification of the provider",
+          "title_ja": ""
         },
         {
           "recital_number": "前文80",
-          "summary_ja": "前文80の内容（要約）",
-          "summary_en": "Content of 前文80",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Protection and equality of persons with disabilities",
+          "relevance": "16条に関連",
+          "title_en": "Protection and equality of persons with disabilities",
+          "title_ja": ""
         },
         {
           "recital_number": "前文81",
-          "summary_ja": "前文81の内容（要約）",
-          "summary_en": "Content of 前文81",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Establishing a quality management system",
+          "relevance": "16条に関連",
+          "title_en": "Establishing a quality management system",
+          "title_ja": ""
         },
         {
           "recital_number": "前文82",
-          "summary_ja": "前文82の内容（要約）",
-          "summary_en": "Content of 前文82",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Level-playing field for operators",
+          "relevance": "16条に関連",
+          "title_en": "Level-playing field for operators",
+          "title_ja": ""
         },
         {
           "recital_number": "前文83",
-          "summary_ja": "前文83の内容（要約）",
-          "summary_en": "Content of 前文83",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Clarification of the roles and obligations of operators along the value chain",
+          "relevance": "16条に関連",
+          "title_en": "Clarification of the roles and obligations of operators along the value chain",
+          "title_ja": ""
         },
         {
           "recital_number": "前文84",
-          "summary_ja": "前文84の内容（要約）",
-          "summary_en": "Content of 前文84",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Extension of obligations to distributors, importers, deployers or other third parties as providers of high-risk AI system",
+          "relevance": "16条に関連",
+          "title_en": "Extension of obligations to distributors, importers, deployers or other third parties as providers of high-risk AI system",
+          "title_ja": ""
         },
         {
           "recital_number": "前文85",
-          "summary_ja": "前文85の内容（要約）",
-          "summary_en": "Content of 前文85",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Cooperation of high-risk AI system providers along the value chain and with authorities",
+          "relevance": "16条に関連",
+          "title_en": "Cooperation of high-risk AI system providers along the value chain and with authorities",
+          "title_ja": ""
         },
         {
           "recital_number": "前文86",
-          "summary_ja": "前文86の内容（要約）",
-          "summary_en": "Content of 前文86",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Obligation for former providers to cooperate",
+          "relevance": "16条に関連",
+          "title_en": "Obligation for former providers to cooperate",
+          "title_ja": ""
         },
         {
           "recital_number": "前文87",
-          "summary_ja": "前文87の内容（要約）",
-          "summary_en": "Content of 前文87",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Obligations in the event of high-risk AI system as a safety component of a product",
+          "relevance": "16条に関連",
+          "title_en": "Obligations in the event of high-risk AI system as a safety component of a product",
+          "title_ja": ""
         },
         {
           "recital_number": "前文88",
-          "summary_ja": "前文88の内容（要約）",
-          "summary_en": "Content of 前文88",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Written agreement on the provision of information",
+          "relevance": "16条に関連",
+          "title_en": "Written agreement on the provision of information",
+          "title_ja": ""
         },
         {
           "recital_number": "前文101",
-          "summary_ja": "前文101の内容（要約）",
-          "summary_en": "Content of 前文101",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Transparency obligations for providers of general-purpose AI models",
+          "relevance": "16条に関連",
+          "title_en": "Transparency obligations for providers of general-purpose AI models",
+          "title_ja": ""
         },
         {
           "recital_number": "前文104",
-          "summary_ja": "前文104の内容（要約）",
-          "summary_en": "Content of 前文104",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Exemptions for transparency obligations for general-purpose AI models under open-source license",
+          "relevance": "16条に関連",
+          "title_en": "Exemptions for transparency obligations for general-purpose AI models under open-source license",
+          "title_ja": ""
         },
         {
           "recital_number": "前文106",
-          "summary_ja": "前文106の内容（要約）",
-          "summary_en": "Content of 前文106",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Strategy for compliance with Union law for providers of general-purpose AI models",
+          "relevance": "16条に関連",
+          "title_en": "Strategy for compliance with Union law for providers of general-purpose AI models",
+          "title_ja": ""
         },
         {
           "recital_number": "前文109",
-          "summary_ja": "前文109の内容（要約）",
-          "summary_en": "Content of 前文109",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Proportionality of monitoring measures by the AI Office",
+          "relevance": "16条に関連",
+          "title_en": "Proportionality of monitoring measures by the AI Office",
+          "title_ja": ""
         },
         {
           "recital_number": "前文114",
-          "summary_ja": "前文114の内容（要約）",
-          "summary_en": "Content of 前文114",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Obligations for providers of general-purpose AI models with systemic risks",
+          "relevance": "16条に関連",
+          "title_en": "Obligations for providers of general-purpose AI models with systemic risks",
+          "title_ja": ""
         },
         {
           "recital_number": "前文117",
-          "summary_ja": "前文117の内容（要約）",
-          "summary_en": "Content of 前文117",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Implementation of harmonised codes of practice by the EU Commission",
+          "relevance": "16条に関連",
+          "title_en": "Implementation of harmonised codes of practice by the EU Commission",
+          "title_ja": ""
         },
         {
           "recital_number": "前文118",
-          "summary_ja": "前文118の内容（要約）",
-          "summary_en": "Content of 前文118",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "AI Act and Digital Services Act when embedding AI models in platforms and search engines",
+          "relevance": "16条に関連",
+          "title_en": "AI Act and Digital Services Act when embedding AI models in platforms and search engines",
+          "title_ja": ""
         },
         {
           "recital_number": "前文119",
-          "summary_ja": "前文119の内容（要約）",
-          "summary_en": "Content of 前文119",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "AI systems as intermediary services under the Digital Services Act",
+          "relevance": "16条に関連",
+          "title_en": "AI systems as intermediary services under the Digital Services Act",
+          "title_ja": ""
         },
         {
           "recital_number": "前文136",
-          "summary_ja": "前文136の内容（要約）",
-          "summary_en": "Content of 前文136",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Importance of transparency for the implementation of the AI Regulation",
+          "relevance": "16条に関連",
+          "title_en": "Importance of transparency for the implementation of the AI Regulation",
+          "title_ja": ""
         },
         {
           "recital_number": "前文145",
-          "summary_ja": "前文145の内容（要約）",
-          "summary_en": "Content of 前文145",
-          "relevance": "16条に関連"
+          "summary_ja": "",
+          "summary_en": "Minimising risk and facilitating the fulfillment of obligations",
+          "relevance": "16条に関連",
+          "title_en": "Minimising risk and facilitating the fulfillment of obligations",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -2656,15 +2906,19 @@
       "related_recitals": [
         {
           "recital_number": "前文81",
-          "summary_ja": "前文81の内容（要約）",
-          "summary_en": "Content of 前文81",
-          "relevance": "17条に関連"
+          "summary_ja": "",
+          "summary_en": "Establishing a quality management system",
+          "relevance": "17条に関連",
+          "title_en": "Establishing a quality management system",
+          "title_ja": ""
         },
         {
           "recital_number": "前文146",
-          "summary_ja": "前文146の内容（要約）",
-          "summary_en": "Content of 前文146",
-          "relevance": "17条に関連"
+          "summary_ja": "",
+          "summary_en": "Facilitating the introduction of quality management for microenterprises",
+          "relevance": "17条に関連",
+          "title_en": "Facilitating the introduction of quality management for microenterprises",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -2837,57 +3091,75 @@
       "related_recitals": [
         {
           "recital_number": "前文84",
-          "summary_ja": "前文84の内容（要約）",
-          "summary_en": "Content of 前文84",
-          "relevance": "26条に関連"
+          "summary_ja": "",
+          "summary_en": "Extension of obligations to distributors, importers, deployers or other third parties as providers of high-risk AI system",
+          "relevance": "26条に関連",
+          "title_en": "Extension of obligations to distributors, importers, deployers or other third parties as providers of high-risk AI system",
+          "title_ja": ""
         },
         {
           "recital_number": "前文91",
-          "summary_ja": "前文91の内容（要約）",
-          "summary_en": "Content of 前文91",
-          "relevance": "26条に関連"
+          "summary_ja": "",
+          "summary_en": "Definition of special responsibilities and obligations for deployers",
+          "relevance": "26条に関連",
+          "title_en": "Definition of special responsibilities and obligations for deployers",
+          "title_ja": ""
         },
         {
           "recital_number": "前文92",
-          "summary_ja": "前文92の内容（要約）",
-          "summary_en": "Content of 前文92",
-          "relevance": "26条に関連"
+          "summary_ja": "",
+          "summary_en": "Duty of employers to inform and consult employees or their representatives",
+          "relevance": "26条に関連",
+          "title_en": "Duty of employers to inform and consult employees or their representatives",
+          "title_ja": ""
         },
         {
           "recital_number": "前文93",
-          "summary_ja": "前文93の内容（要約）",
-          "summary_en": "Content of 前文93",
-          "relevance": "26条に関連"
+          "summary_ja": "",
+          "summary_en": "Notification and information of persons by the deployer",
+          "relevance": "26条に関連",
+          "title_en": "Notification and information of persons by the deployer",
+          "title_ja": ""
         },
         {
           "recital_number": "前文95",
-          "summary_ja": "前文95の内容（要約）",
-          "summary_en": "Content of 前文95",
-          "relevance": "26条に関連"
+          "summary_ja": "",
+          "summary_en": "Compliance with safeguards for subsequent remote biometric identification",
+          "relevance": "26条に関連",
+          "title_en": "Compliance with safeguards for subsequent remote biometric identification",
+          "title_ja": ""
         },
         {
           "recital_number": "前文96",
-          "summary_ja": "前文96の内容（要約）",
-          "summary_en": "Content of 前文96",
-          "relevance": "26条に関連"
+          "summary_ja": "",
+          "summary_en": "Implementation of fundamental rights impact assessment and further follow-up measures",
+          "relevance": "26条に関連",
+          "title_en": "Implementation of fundamental rights impact assessment and further follow-up measures",
+          "title_ja": ""
         },
         {
           "recital_number": "前文134",
-          "summary_ja": "前文134の内容（要約）",
-          "summary_en": "Content of 前文134",
-          "relevance": "26条に関連"
+          "summary_ja": "",
+          "summary_en": "Obligation to disclose artificially generated content",
+          "relevance": "26条に関連",
+          "title_en": "Obligation to disclose artificially generated content",
+          "title_ja": ""
         },
         {
           "recital_number": "前文136",
-          "summary_ja": "前文136の内容（要約）",
-          "summary_en": "Content of 前文136",
-          "relevance": "26条に関連"
+          "summary_ja": "",
+          "summary_en": "Importance of transparency for the implementation of the AI Regulation",
+          "relevance": "26条に関連",
+          "title_en": "Importance of transparency for the implementation of the AI Regulation",
+          "title_ja": ""
         },
         {
           "recital_number": "前文143",
-          "summary_ja": "前文143の内容（要約）",
-          "summary_en": "Content of 前文143",
-          "relevance": "26条に関連"
+          "summary_ja": "",
+          "summary_en": "Special consideration of the interests of SMEs",
+          "relevance": "26条に関連",
+          "title_en": "Special consideration of the interests of SMEs",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -2970,45 +3242,59 @@
       "related_recitals": [
         {
           "recital_number": "前文123",
-          "summary_ja": "高リスクAIシステムが高い信頼性をえるためには、上梓前に適合性アセスメントを実施",
-          "summary_en": "New related recital",
-          "relevance": "関連性の説明"
+          "summary_ja": "",
+          "summary_en": "Conformity assessment for high-risk AI systems",
+          "relevance": "関連性の説明",
+          "title_en": "Conformity assessment for high-risk AI systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文78",
-          "summary_ja": "前文78の内容（要約）",
-          "summary_en": "Content of 前文78",
-          "relevance": "43条に関連"
+          "summary_ja": "",
+          "summary_en": "Conformity assessment",
+          "relevance": "43条に関連",
+          "title_en": "Conformity assessment",
+          "title_ja": ""
         },
         {
           "recital_number": "前文124",
-          "summary_ja": "前文124の内容（要約）",
-          "summary_en": "Content of 前文124",
-          "relevance": "43条に関連"
+          "summary_ja": "",
+          "summary_en": "Conformity assessment according to relevant EU harmonisation legislation",
+          "relevance": "43条に関連",
+          "title_en": "Conformity assessment according to relevant EU harmonisation legislation",
+          "title_ja": ""
         },
         {
           "recital_number": "前文125",
-          "summary_ja": "前文125の内容（要約）",
-          "summary_en": "Content of 前文125",
-          "relevance": "43条に関連"
+          "summary_ja": "",
+          "summary_en": "Limited conformity assessment by third parties",
+          "relevance": "43条に関連",
+          "title_en": "Limited conformity assessment by third parties",
+          "title_ja": ""
         },
         {
           "recital_number": "前文126",
-          "summary_ja": "前文126の内容（要約）",
-          "summary_en": "Content of 前文126",
-          "relevance": "43条に関連"
+          "summary_ja": "",
+          "summary_en": "Procedure for third-party conformity assessments",
+          "relevance": "43条に関連",
+          "title_en": "Procedure for third-party conformity assessments",
+          "title_ja": ""
         },
         {
           "recital_number": "前文128",
-          "summary_ja": "前文128の内容（要約）",
-          "summary_en": "Content of 前文128",
-          "relevance": "43条に関連"
+          "summary_ja": "",
+          "summary_en": "Reassessment of conformity in the event of significant system changes",
+          "relevance": "43条に関連",
+          "title_en": "Reassessment of conformity in the event of significant system changes",
+          "title_ja": ""
         },
         {
           "recital_number": "前文147",
-          "summary_ja": "前文147の内容（要約）",
-          "summary_en": "Content of 前文147",
-          "relevance": "43条に関連"
+          "summary_ja": "",
+          "summary_en": "Facilitating access to testing and experimentation facilites for certain entities",
+          "relevance": "43条に関連",
+          "title_en": "Facilitating access to testing and experimentation facilites for certain entities",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -3128,33 +3414,43 @@
       "related_recitals": [
         {
           "recital_number": "前文132",
-          "summary_ja": "自然人との対話やコンテンツ生成を行うAIシステムの透明性義務",
+          "summary_ja": "",
           "summary_en": "Transparency obligations for AI systems",
-          "relevance": "透明性義務の必要性"
+          "relevance": "透明性義務の必要性",
+          "title_en": "Transparency obligations for AI systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文133",
-          "summary_ja": "前文133の内容（要約）",
-          "summary_en": "Content of 前文133",
-          "relevance": "50条に関連"
+          "summary_ja": "",
+          "summary_en": "Mandatory labeling of AI results",
+          "relevance": "50条に関連",
+          "title_en": "Mandatory labeling of AI results",
+          "title_ja": ""
         },
         {
           "recital_number": "前文134",
-          "summary_ja": "前文134の内容（要約）",
-          "summary_en": "Content of 前文134",
-          "relevance": "50条に関連"
+          "summary_ja": "",
+          "summary_en": "Obligation to disclose artificially generated content",
+          "relevance": "50条に関連",
+          "title_en": "Obligation to disclose artificially generated content",
+          "title_ja": ""
         },
         {
           "recital_number": "前文136",
-          "summary_ja": "前文136の内容（要約）",
-          "summary_en": "Content of 前文136",
-          "relevance": "50条に関連"
+          "summary_ja": "",
+          "summary_en": "Importance of transparency for the implementation of the AI Regulation",
+          "relevance": "50条に関連",
+          "title_en": "Importance of transparency for the implementation of the AI Regulation",
+          "title_ja": ""
         },
         {
           "recital_number": "前文137",
-          "summary_ja": "前文137の内容（要約）",
-          "summary_en": "Content of 前文137",
-          "relevance": "50条に関連"
+          "summary_ja": "",
+          "summary_en": "Transparency is no substitute for lawfulness",
+          "relevance": "50条に関連",
+          "title_en": "Transparency is no substitute for lawfulness",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -3259,27 +3555,35 @@
       "related_recitals": [
         {
           "recital_number": "前文110",
-          "summary_ja": "前文110の内容（要約）",
-          "summary_en": "Content of 前文110",
-          "relevance": "51条に関連"
+          "summary_ja": "",
+          "summary_en": "Systemic risks of general-purpose AI models",
+          "relevance": "51条に関連",
+          "title_en": "Systemic risks of general-purpose AI models",
+          "title_ja": ""
         },
         {
           "recital_number": "前文111",
-          "summary_ja": "前文111の内容（要約）",
-          "summary_en": "Content of 前文111",
-          "relevance": "51条に関連"
+          "summary_ja": "",
+          "summary_en": "Methodology for classifying AI models as systemically risky",
+          "relevance": "51条に関連",
+          "title_en": "Methodology for classifying AI models as systemically risky",
+          "title_ja": ""
         },
         {
           "recital_number": "前文113",
-          "summary_ja": "前文113の内容（要約）",
-          "summary_en": "Content of 前文113",
-          "relevance": "51条に関連"
+          "summary_ja": "",
+          "summary_en": "Subsequent classificaton of AI models with systemic risk",
+          "relevance": "51条に関連",
+          "title_en": "Subsequent classificaton of AI models with systemic risk",
+          "title_ja": ""
         },
         {
           "recital_number": "前文163",
-          "summary_ja": "前文163の内容（要約）",
-          "summary_en": "Content of 前文163",
-          "relevance": "51条に関連"
+          "summary_ja": "",
+          "summary_en": "Support for the AI Office by scientific panel",
+          "relevance": "51条に関連",
+          "title_en": "Support for the AI Office by scientific panel",
+          "title_ja": ""
         }
       ],
       "related_annexes": [
@@ -3393,87 +3697,115 @@
       "related_recitals": [
         {
           "recital_number": "前文97",
-          "summary_ja": "前文97の内容（要約）",
-          "summary_en": "Content of 前文97",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Precise definition of individual AI systems",
+          "relevance": "53条に関連",
+          "title_en": "Precise definition of individual AI systems",
+          "title_ja": ""
         },
         {
           "recital_number": "前文98",
-          "summary_ja": "前文98の内容（要約）",
-          "summary_en": "Content of 前文98",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Model determination based on parameters",
+          "relevance": "53条に関連",
+          "title_en": "Model determination based on parameters",
+          "title_ja": ""
         },
         {
           "recital_number": "前文99",
-          "summary_ja": "前文99の内容（要約）",
-          "summary_en": "Content of 前文99",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Example of AI model with general-purpose",
+          "relevance": "53条に関連",
+          "title_en": "Example of AI model with general-purpose",
+          "title_ja": ""
         },
         {
           "recital_number": "前文100",
-          "summary_ja": "前文100の内容（要約）",
-          "summary_en": "Content of 前文100",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Further cases of AI models with a general-purpose",
+          "relevance": "53条に関連",
+          "title_en": "Further cases of AI models with a general-purpose",
+          "title_ja": ""
         },
         {
           "recital_number": "前文101",
-          "summary_ja": "前文101の内容（要約）",
-          "summary_en": "Content of 前文101",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Transparency obligations for providers of general-purpose AI models",
+          "relevance": "53条に関連",
+          "title_en": "Transparency obligations for providers of general-purpose AI models",
+          "title_ja": ""
         },
         {
           "recital_number": "前文102",
-          "summary_ja": "前文102の内容（要約）",
-          "summary_en": "Content of 前文102",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Transparency obligations for general-purpose AI models under open-source license",
+          "relevance": "53条に関連",
+          "title_en": "Transparency obligations for general-purpose AI models under open-source license",
+          "title_ja": ""
         },
         {
           "recital_number": "前文103",
-          "summary_ja": "前文103の内容（要約）",
-          "summary_en": "Content of 前文103",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Defintion of the term AI model with general-purpose under open-source license",
+          "relevance": "53条に関連",
+          "title_en": "Defintion of the term AI model with general-purpose under open-source license",
+          "title_ja": ""
         },
         {
           "recital_number": "前文104",
-          "summary_ja": "前文104の内容（要約）",
-          "summary_en": "Content of 前文104",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Exemptions for transparency obligations for general-purpose AI models under open-source license",
+          "relevance": "53条に関連",
+          "title_en": "Exemptions for transparency obligations for general-purpose AI models under open-source license",
+          "title_ja": ""
         },
         {
           "recital_number": "前文105",
-          "summary_ja": "前文105の内容（要約）",
-          "summary_en": "Content of 前文105",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Use of protected content for developing general-purpose AI models",
+          "relevance": "53条に関連",
+          "title_en": "Use of protected content for developing general-purpose AI models",
+          "title_ja": ""
         },
         {
           "recital_number": "前文106",
-          "summary_ja": "前文106の内容（要約）",
-          "summary_en": "Content of 前文106",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Strategy for compliance with Union law for providers of general-purpose AI models",
+          "relevance": "53条に関連",
+          "title_en": "Strategy for compliance with Union law for providers of general-purpose AI models",
+          "title_ja": ""
         },
         {
           "recital_number": "前文107",
-          "summary_ja": "前文107の内容（要約）",
-          "summary_en": "Content of 前文107",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Transparency obligations for providers of general-purpose AI models concerning training data",
+          "relevance": "53条に関連",
+          "title_en": "Transparency obligations for providers of general-purpose AI models concerning training data",
+          "title_ja": ""
         },
         {
           "recital_number": "前文108",
-          "summary_ja": "前文108の内容（要約）",
-          "summary_en": "Content of 前文108",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Compliance monitoring by the AI Office",
+          "relevance": "53条に関連",
+          "title_en": "Compliance monitoring by the AI Office",
+          "title_ja": ""
         },
         {
           "recital_number": "前文109",
-          "summary_ja": "前文109の内容（要約）",
-          "summary_en": "Content of 前文109",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Proportionality of monitoring measures by the AI Office",
+          "relevance": "53条に関連",
+          "title_en": "Proportionality of monitoring measures by the AI Office",
+          "title_ja": ""
         },
         {
           "recital_number": "前文116",
-          "summary_ja": "前文116の内容（要約）",
-          "summary_en": "Content of 前文116",
-          "relevance": "53条に関連"
+          "summary_ja": "",
+          "summary_en": "Codes of practice for providers of general-purpose AI models with systemic risks",
+          "relevance": "53条に関連",
+          "title_en": "Codes of practice for providers of general-purpose AI models with systemic risks",
+          "title_ja": ""
         }
       ],
       "related_annexes": [
@@ -3615,27 +3947,35 @@
       "related_recitals": [
         {
           "recital_number": "前文103",
-          "summary_ja": "フリー・オープンソースライセンスのGPAIモデルに対する例外規定",
-          "summary_en": "Exceptions for open-source GPAI models",
-          "relevance": "オープンソースモデルの扱い"
+          "summary_ja": "",
+          "summary_en": "Defintion of the term AI model with general-purpose under open-source license",
+          "relevance": "オープンソースモデルの扱い",
+          "title_en": "Defintion of the term AI model with general-purpose under open-source license",
+          "title_ja": ""
         },
         {
           "recital_number": "前文114",
-          "summary_ja": "前文114の内容（要約）",
-          "summary_en": "Content of 前文114",
-          "relevance": "55条に関連"
+          "summary_ja": "",
+          "summary_en": "Obligations for providers of general-purpose AI models with systemic risks",
+          "relevance": "55条に関連",
+          "title_en": "Obligations for providers of general-purpose AI models with systemic risks",
+          "title_ja": ""
         },
         {
           "recital_number": "前文115",
-          "summary_ja": "前文115の内容（要約）",
-          "summary_en": "Content of 前文115",
-          "relevance": "55条に関連"
+          "summary_ja": "",
+          "summary_en": "Mandatory reporting of risk events for providers of general-purpose AI models with systemic risks",
+          "relevance": "55条に関連",
+          "title_en": "Mandatory reporting of risk events for providers of general-purpose AI models with systemic risks",
+          "title_ja": ""
         },
         {
           "recital_number": "前文116",
-          "summary_ja": "前文116の内容（要約）",
-          "summary_en": "Content of 前文116",
-          "relevance": "55条に関連"
+          "summary_ja": "",
+          "summary_en": "Codes of practice for providers of general-purpose AI models with systemic risks",
+          "relevance": "55条に関連",
+          "title_en": "Codes of practice for providers of general-purpose AI models with systemic risks",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -3723,27 +4063,35 @@
       "related_recitals": [
         {
           "recital_number": "前文141",
-          "summary_ja": "前文141の内容（要約）",
-          "summary_en": "Content of 前文141",
-          "relevance": "60条に関連"
+          "summary_ja": "",
+          "summary_en": "Requirements for testing high-risk AI systems under real-world conditions",
+          "relevance": "60条に関連",
+          "title_en": "Requirements for testing high-risk AI systems under real-world conditions",
+          "title_ja": ""
         },
         {
           "recital_number": "前文142",
-          "summary_ja": "前文142の内容（要約）",
-          "summary_en": "Content of 前文142",
-          "relevance": "60条に関連"
+          "summary_ja": "",
+          "summary_en": "Encourage the funding of research and development on AI solutions",
+          "relevance": "60条に関連",
+          "title_en": "Encourage the funding of research and development on AI solutions",
+          "title_ja": ""
         },
         {
           "recital_number": "前文144",
-          "summary_ja": "前文144の内容（要約）",
-          "summary_en": "Content of 前文144",
-          "relevance": "60条に関連"
+          "summary_ja": "",
+          "summary_en": "Promotion and protection of innovation",
+          "relevance": "60条に関連",
+          "title_en": "Promotion and protection of innovation",
+          "title_ja": ""
         },
         {
           "recital_number": "前文145",
-          "summary_ja": "前文145の内容（要約）",
-          "summary_en": "Content of 前文145",
-          "relevance": "60条に関連"
+          "summary_ja": "",
+          "summary_en": "Minimising risk and facilitating the fulfillment of obligations",
+          "relevance": "60条に関連",
+          "title_en": "Minimising risk and facilitating the fulfillment of obligations",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -3842,21 +4190,27 @@
       "related_recitals": [
         {
           "recital_number": "前文71",
-          "summary_ja": "前文71の内容（要約）",
-          "summary_en": "Content of 前文71",
-          "relevance": "72条に関連"
+          "summary_ja": "",
+          "summary_en": "Documentation of the development",
+          "relevance": "72条に関連",
+          "title_en": "Documentation of the development",
+          "title_ja": ""
         },
         {
           "recital_number": "前文155",
-          "summary_ja": "前文155の内容（要約）",
-          "summary_en": "Content of 前文155",
-          "relevance": "72条に関連"
+          "summary_ja": "",
+          "summary_en": "System for monitoring high-risk AI systems and system for reporting serious incidents",
+          "relevance": "72条に関連",
+          "title_en": "System for monitoring high-risk AI systems and system for reporting serious incidents",
+          "title_ja": ""
         },
         {
           "recital_number": "前文158",
-          "summary_ja": "前文158の内容（要約）",
-          "summary_en": "Content of 前文158",
-          "relevance": "72条に関連"
+          "summary_ja": "",
+          "summary_en": "Coherent application and enforcement of obligations for financial services",
+          "relevance": "72条に関連",
+          "title_en": "Coherent application and enforcement of obligations for financial services",
+          "title_ja": ""
         }
       ],
       "related_annexes": [],
@@ -3885,5 +4239,6 @@
         "en": "This article outlines the requirements for providers to establish a post-market monitoring system for high-risk AI systems. This system must actively collect and analyse data on the performance and compliance of AI systems throughout their lifetime."
       }
     }
-  ]
+  ],
+  "updated_at": "2025-11-20T14:07:13.818494"
 }
