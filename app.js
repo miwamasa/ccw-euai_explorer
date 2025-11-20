@@ -240,25 +240,23 @@ function renderArticleDetail() {
             </div>
         </div>
 
-        ${article.summary && (article.summary.ja || article.summary.en) ? `
+        ${article.summary && (article.summary.ja || article.summary.en || editMode) ? `
         <div class="detail-section" style="background: #f0f8ff; padding: 1rem; border-left: 4px solid #3498db;">
             <h3 style="margin-top: 0;">📋 要約 (Summary)</h3>
-            ${article.summary.ja ? `
             <div class="text-content ${editMode ? 'editable' : ''}" style="margin-bottom: 0.5rem;">
                 <strong>日本語:</strong><br>
                 ${editMode ?
-                    `<textarea id="summary_ja" rows="2" style="background: white;">${article.summary.ja}</textarea>` :
-                    `<p style="margin: 0.5rem 0;">${article.summary.ja}</p>`
+                    `<textarea id="summary_ja" rows="2" style="background: white;">${article.summary.ja || ''}</textarea>` :
+                    (article.summary.ja ? `<p style="margin: 0.5rem 0;">${article.summary.ja}</p>` : '<p style="margin: 0.5rem 0; color: #999;">(未入力)</p>')
                 }
-            </div>` : ''}
-            ${article.summary.en ? `
+            </div>
             <div class="text-content ${editMode ? 'editable' : ''}">
                 <strong>English:</strong><br>
                 ${editMode ?
-                    `<textarea id="summary_en" rows="2" style="background: white;">${article.summary.en}</textarea>` :
-                    `<p style="margin: 0.5rem 0; font-style: italic; color: #2c3e50;">${article.summary.en}</p>`
+                    `<textarea id="summary_en" rows="2" style="background: white;">${article.summary.en || ''}</textarea>` :
+                    (article.summary.en ? `<p style="margin: 0.5rem 0; font-style: italic; color: #2c3e50;">${article.summary.en}</p>` : '<p style="margin: 0.5rem 0; color: #999;">(Not entered)</p>')
                 }
-            </div>` : ''}
+            </div>
         </div>
         ` : ''}
 

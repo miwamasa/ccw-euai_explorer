@@ -3884,6 +3884,95 @@
         "ja": "",
         "en": "This article outlines the requirements for providers to establish a post-market monitoring system for high-risk AI systems. This system must actively collect and analyse data on the performance and compliance of AI systems throughout their lifetime."
       }
+    },
+    {
+      "article_id": "article_56",
+      "article_number": "56条",
+      "section_id": "TBD",
+      "title_ja": "実践規範",
+      "title_en": "Codes of practice",
+      "slide_pages": [],
+      "category": "gpai",
+      "risk_level": "gpai",
+      "summary": {
+        "ja": "",
+        "en": "The article describes the role of the AI Office and the Board in overseeing codes of practice.These codes aim to ensure compliance with the AI Act, covering issues like documentation, systemic risk assessment and management, and cybersecurity."
+      },
+      "article_text": {
+        "ja": "",
+        "en": "The AI Office shall encourage and facilitate the drawing up of codes of practice at Union level in order to contribute to the proper application of this Regulation, taking into account international approaches."
+      },
+      "requirements": [],
+      "related_articles": [
+        {
+          "article_id": "article_53",
+          "article_number": "53条",
+          "relation_type": "references",
+          "description": "汎用AIモデルの提供者の義務"
+        },
+        {
+          "article_id": "article_55",
+          "article_number": "55条",
+          "relation_type": "references",
+          "description": "システミックリスクを伴う汎用AIモデル"
+        }
+      ],
+      "related_recitals": [
+        {
+          "recital_number": "前文116",
+          "title_ja": "",
+          "title_en": "Codes of practice for providers of general-purpose AI models with systemic risks",
+          "summary_ja": "",
+          "summary_en": "Codes of practice for providers of general-purpose AI models with systemic risks",
+          "relevance": "56条に関連"
+        },
+        {
+          "recital_number": "前文117",
+          "title_ja": "",
+          "title_en": "Implementation of harmonised codes of practice by the EU Commission",
+          "summary_ja": "",
+          "summary_en": "Implementation of harmonised codes of practice by the EU Commission",
+          "relevance": "56条に関連"
+        },
+        {
+          "recital_number": "前文135",
+          "title_ja": "",
+          "title_en": "Development of codes of conduct at Union level for AI content review",
+          "summary_ja": "",
+          "summary_en": "Development of codes of conduct at Union level for AI content review",
+          "relevance": "56条に関連"
+        },
+        {
+          "recital_number": "前文165",
+          "title_ja": "",
+          "title_en": "Voluntary codes of conduct",
+          "summary_ja": "",
+          "summary_en": "Voluntary codes of conduct",
+          "relevance": "56条に関連"
+        }
+      ],
+      "related_annexes": [],
+      "notes": [],
+      "visual_elements": {
+        "has_flowchart": false,
+        "has_diagram": false,
+        "has_table": false,
+        "elements": []
+      },
+      "metadata": {
+        "created_at": "2025-11-20T14:11:17.008812",
+        "updated_at": "2025-11-20T14:11:17.008840",
+        "version": "1.0",
+        "author": "AI法対応チーム",
+        "status": "draft",
+        "tags": [
+          "実践規範",
+          "GPAI",
+          "コンプライアンス"
+        ],
+        "comments": []
+      }
     }
-  ]
+  ],
+  "updated_at": "2025-11-20T14:11:17.008846"
 }

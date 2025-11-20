@@ -315,6 +315,14 @@
           "type": "string",
           "description": "前文番号 (例: 前文66)"
         },
+        "title_ja": {
+          "type": "string",
+          "description": "前文タイトル（日本語）"
+        },
+        "title_en": {
+          "type": "string",
+          "description": "前文タイトル（英語）"
+        },
         "summary_ja": {
           "type": "string",
           "description": "日本語要約"
