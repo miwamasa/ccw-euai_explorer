@@ -355,6 +355,34 @@ function renderRequirements(requirements) {
                         <label>責任者:</label>
                         <input type="text" id="req_responsible_${index}" value="${req.responsible_party || ''}" />
                     </div>
+                    <div class="input-group">
+                        <label>サブ項目:
+                            <button class="btn btn-info btn-sm" onclick="addSubItem(${index})" style="margin-left: 0.5rem; font-size: 0.7rem; padding: 0.2rem 0.5rem;">サブ項目追加</button>
+                        </label>
+                        <div id="subitems_${index}" style="margin-top: 0.5rem;">
+                            ${(req.sub_items || []).map((subItem, subIndex) => `
+                                <div style="background: #f0f0f0; padding: 0.5rem; margin-bottom: 0.5rem; border-radius: 4px; border-left: 3px solid #3498db;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
+                                        <strong style="font-size: 0.85rem;">サブ項目 #${subIndex + 1}</strong>
+                                        <button class="btn btn-danger btn-sm" onclick="deleteSubItem(${index}, ${subIndex})" style="font-size: 0.7rem; padding: 0.2rem 0.4rem;">削除</button>
+                                    </div>
+                                    <div style="margin-bottom: 0.3rem;">
+                                        <label style="font-size: 0.85rem;">ID:</label>
+                                        <input type="text" id="subitem_id_${index}_${subIndex}" value="${subItem.item_id || ''}" style="font-size: 0.85rem;" />
+                                    </div>
+                                    <div style="margin-bottom: 0.3rem;">
+                                        <label style="font-size: 0.85rem;">説明（日本語）:</label>
+                                        <input type="text" id="subitem_desc_ja_${index}_${subIndex}" value="${subItem.description_ja || ''}" style="font-size: 0.85rem;" />
+                                    </div>
+                                    <div>
+                                        <label style="font-size: 0.85rem;">説明（English）:</label>
+                                        <input type="text" id="subitem_desc_en_${index}_${subIndex}" value="${subItem.description_en || ''}" style="font-size: 0.85rem;" />
+                                    </div>
+                                </div>
+                            `).join('')}
+                            ${(req.sub_items || []).length === 0 ? '<p style="color: #999; font-size: 0.85rem;">サブ項目なし</p>' : ''}
+                        </div>
+                    </div>
                 </div>
             `;
         } else {
@@ -526,12 +554,28 @@ function saveArticleChangesWithoutNotification() {
     for (let i = 0; i < currentArticle.requirements.length; i++) {
         const reqId = document.getElementById(`req_id_${i}`);
         if (reqId) {
+            // Save sub-items for this requirement
+            const subItems = [];
+            const currentReq = currentArticle.requirements[i];
+            if (currentReq.sub_items) {
+                for (let j = 0; j < currentReq.sub_items.length; j++) {
+                    const subItemId = document.getElementById(`subitem_id_${i}_${j}`);
+                    if (subItemId) {
+                        subItems.push({
+                            item_id: subItemId.value,
+                            description_ja: document.getElementById(`subitem_desc_ja_${i}_${j}`).value,
+                            description_en: document.getElementById(`subitem_desc_en_${i}_${j}`).value
+                        });
+                    }
+                }
+            }
+
             newRequirements.push({
                 req_id: reqId.value,
                 type: document.getElementById(`req_type_${i}`).value,
                 description_ja: document.getElementById(`req_desc_ja_${i}`).value,
                 description_en: document.getElementById(`req_desc_en_${i}`).value,
-                sub_items: currentArticle.requirements[i].sub_items || [],
+                sub_items: subItems,
                 conditions: document.getElementById(`req_conditions_${i}`).value,
                 verification_method: document.getElementById(`req_verification_${i}`).value,
                 responsible_party: document.getElementById(`req_responsible_${i}`).value
@@ -602,6 +646,43 @@ function deleteRequirement(index) {
 
     if (confirm('この要件を削除してもよろしいですか?')) {
         currentArticle.requirements.splice(index, 1);
+        renderArticleDetail();
+    }
+}
+
+// Add/Delete functions for sub-items
+function addSubItem(reqIndex) {
+    if (!currentArticle) return;
+
+    // Save current changes before adding new sub-item
+    if (editMode) {
+        saveArticleChangesWithoutNotification();
+    }
+
+    const requirement = currentArticle.requirements[reqIndex];
+    if (!requirement) return;
+
+    if (!requirement.sub_items) {
+        requirement.sub_items = [];
+    }
+
+    requirement.sub_items.push({
+        item_id: `subitem_${Date.now()}`,
+        description_ja: '新しいサブ項目',
+        description_en: 'New sub-item'
+    });
+
+    renderArticleDetail();
+}
+
+function deleteSubItem(reqIndex, subIndex) {
+    if (!currentArticle) return;
+
+    const requirement = currentArticle.requirements[reqIndex];
+    if (!requirement || !requirement.sub_items) return;
+
+    if (confirm('このサブ項目を削除してもよろしいですか?')) {
+        requirement.sub_items.splice(subIndex, 1);
         renderArticleDetail();
     }
 }
