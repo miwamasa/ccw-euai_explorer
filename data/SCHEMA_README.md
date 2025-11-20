@@ -6,9 +6,9 @@
 
 ## ファイル
 
-- **eu_ai_act_schema.json**: 条文データコレクション全体のJSON Schema
-- **eu_ai_act_articles_complete.json**: 元のデータファイル（23条、61要件）
-- **eu_ai_act_articles_2025-11-20 (7).json**: 更新版データファイル（23条、100要件）
+- **eu_ai_act_schema.json**: 条文データコレクション全体のJSON Schema (Version 1.1)
+- **eu_ai_act_articles_complete.json**: 最新の条文データ（24条文、100要件以上）
+- **eu_ai_act_articles_updated.json**: 更新用データファイル（24条文）
 
 ## スキーマ構造
 
@@ -16,12 +16,19 @@
 
 ```json
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "description": "欧州AI法 P23～P70の全条文データ",
   "created_at": "2025-11-04T13:59:51.597357",
+  "updated_at": "2025-11-20T14:30:00.000000",
   "articles": [...]
 }
 ```
+
+- **schema_version**: スキーマバージョン（現在 1.1）
+- **description**: データセットの説明
+- **created_at**: 作成日時（ISO 8601形式）
+- **updated_at**: 更新日時（ISO 8601形式、オプショナル）
+- **articles**: 条文の配列
 
 ### 条文 (Article)
 
@@ -131,7 +138,7 @@ except ValidationError as e:
 
 - **article_id**: `article_` で始まる必要がある
 - **article_number**: `数字条` の形式（例: "9条"）
-- **section_id**: `数字-数字または文字` の形式（例: "3-4", "3-x"）
+- **section_id**: `数字-数字または文字` の形式（例: "3-4", "3-x"）、または "TBD"（未定）
 - **category**, **risk_level**, **requirement.type**: 事前定義された値のみ許可
 - **日時フィールド**: ISO 8601形式
 
@@ -151,6 +158,14 @@ except ValidationError as e:
 - [データ仕様書](../doc/README_articles.md)
 
 ## バージョン履歴
+
+- **1.1** (2025-11-20): スキーマの最新化
+  - 24条文に対応（Article 56「実践規範」を追加）
+  - トップレベルに updated_at フィールドを追加
+  - section_id に "TBD" 値を許可
+  - 前文タイトル（title_ja/title_en）の日本語翻訳を追加（181件）
+  - 条文要約（summary.ja）の日本語翻訳を追加（23件）
+  - 主要なAI法専門用語を日本語化（AI法、高リスクAIシステム、リスク管理システム等）
 
 - **1.0** (2025-11-20): 初版スキーマ作成
   - 23条文、100要件のデータに対応
