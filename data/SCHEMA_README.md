@@ -36,6 +36,7 @@
 - **category**: 条文カテゴリ
 - **risk_level**: リスクレベル
 - **article_text**: 条文本文（日英、オプショナル）
+- **summary**: 条文の要約（日英、最大3行、オプショナル）
 - **requirements**: 要件の配列
 - **related_articles**: 関連条文の配列
 - **related_recitals**: 関連前文の配列
@@ -155,6 +156,8 @@ except ValidationError as e:
   - 23条文、100要件のデータに対応
   - article_textをオプショナル化
   - サブ項目の編集機能に対応
+  - summaryフィールドを追加（日英、最大3行）
+  - euact/*.txtファイルからsummaryとarticle_textを自動抽出
 
 ## ライセンス
 

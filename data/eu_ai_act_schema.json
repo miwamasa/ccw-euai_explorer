@@ -135,6 +135,20 @@
           },
           "description": "条文本文 (オプショナル)"
         },
+        "summary": {
+          "type": "object",
+          "properties": {
+            "ja": {
+              "type": "string",
+              "description": "日本語要約（最大3行）"
+            },
+            "en": {
+              "type": "string",
+              "description": "英語要約（最大3行）"
+            }
+          },
+          "description": "条文の要約 (オプショナル)"
+        },
         "requirements": {
           "type": "array",
           "items": {

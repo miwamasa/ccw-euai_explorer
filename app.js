@@ -185,6 +185,12 @@ function renderArticleDetail() {
             en: ''
         };
     }
+    if (!article.summary) {
+        article.summary = {
+            ja: '',
+            en: ''
+        };
+    }
     if (!article.requirements) {
         article.requirements = [];
     }
@@ -233,6 +239,28 @@ function renderArticleDetail() {
                 <button class="btn btn-danger" onclick="deleteArticle()">削除</button>
             </div>
         </div>
+
+        ${article.summary && (article.summary.ja || article.summary.en) ? `
+        <div class="detail-section" style="background: #f0f8ff; padding: 1rem; border-left: 4px solid #3498db;">
+            <h3 style="margin-top: 0;">📋 要約 (Summary)</h3>
+            ${article.summary.ja ? `
+            <div class="text-content ${editMode ? 'editable' : ''}" style="margin-bottom: 0.5rem;">
+                <strong>日本語:</strong><br>
+                ${editMode ?
+                    `<textarea id="summary_ja" rows="2" style="background: white;">${article.summary.ja}</textarea>` :
+                    `<p style="margin: 0.5rem 0;">${article.summary.ja}</p>`
+                }
+            </div>` : ''}
+            ${article.summary.en ? `
+            <div class="text-content ${editMode ? 'editable' : ''}">
+                <strong>English:</strong><br>
+                ${editMode ?
+                    `<textarea id="summary_en" rows="2" style="background: white;">${article.summary.en}</textarea>` :
+                    `<p style="margin: 0.5rem 0; font-style: italic; color: #2c3e50;">${article.summary.en}</p>`
+                }
+            </div>` : ''}
+        </div>
+        ` : ''}
 
         <div class="detail-section">
             <h3>条文本文</h3>
@@ -547,6 +575,17 @@ function saveArticleChangesWithoutNotification() {
     if (textJa && textEn) {
         currentArticle.article_text.ja = textJa.value;
         currentArticle.article_text.en = textEn.value;
+    }
+
+    // Save summary
+    const summaryJa = document.getElementById('summary_ja');
+    const summaryEn = document.getElementById('summary_en');
+    if (summaryJa || summaryEn) {
+        if (!currentArticle.summary) {
+            currentArticle.summary = { ja: '', en: '' };
+        }
+        if (summaryJa) currentArticle.summary.ja = summaryJa.value;
+        if (summaryEn) currentArticle.summary.en = summaryEn.value;
     }
 
     // Save requirements
