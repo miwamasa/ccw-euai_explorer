@@ -466,6 +466,11 @@ function toggleEditMode() {
 }
 
 function saveArticleChanges() {
+    saveArticleChangesWithoutNotification();
+    showNotification('変更を保存しました', 'success');
+}
+
+function saveArticleChangesWithoutNotification() {
     if (!currentArticle) return;
 
     // Save article text
@@ -527,13 +532,16 @@ function saveArticleChanges() {
 
     // Update metadata
     currentArticle.metadata.updated_at = new Date().toISOString();
-
-    showNotification('変更を保存しました', 'success');
 }
 
 // Add/Delete functions for requirements
 function addRequirement() {
     if (!currentArticle) return;
+
+    // Save current changes before adding new item
+    if (editMode) {
+        saveArticleChangesWithoutNotification();
+    }
 
     currentArticle.requirements.push({
         req_id: `new_req_${Date.now()}`,
@@ -562,6 +570,11 @@ function deleteRequirement(index) {
 function addRelatedArticle() {
     if (!currentArticle) return;
 
+    // Save current changes before adding new item
+    if (editMode) {
+        saveArticleChangesWithoutNotification();
+    }
+
     currentArticle.related_articles.push({
         article_id: 'article_x',
         article_number: 'X条',
@@ -584,6 +597,11 @@ function deleteRelatedArticle(index) {
 // Add/Delete functions for related recitals
 function addRelatedRecital() {
     if (!currentArticle) return;
+
+    // Save current changes before adding new item
+    if (editMode) {
+        saveArticleChangesWithoutNotification();
+    }
 
     currentArticle.related_recitals.push({
         recital_number: '前文X',
