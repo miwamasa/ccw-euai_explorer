@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>欧州AI法条目エクスプローラー・エディタ</title>
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
     <div class="container">
@@ -14,6 +14,7 @@
                 <button id="loadDataBtn" class="btn btn-primary">JSONデータ読み込み</button>
                 <button id="saveDataBtn" class="btn btn-success">JSON保存</button>
                 <button id="addArticleBtn" class="btn btn-info">新規条目追加</button>
+                <button id="slideSettingsBtn" class="btn btn-secondary">スライド設定</button>
                 <button id="generateSlidesBtn" class="btn btn-warning">スライド生成</button>
             </div>
         </header>
@@ -82,6 +83,77 @@
         </div>
     </div>
 
-    <script src="app.js?v=6"></script>
+    <!-- Modal for Slide Settings -->
+    <div id="slideSettingsModal" class="modal">
+        <div class="modal-content" style="max-width: 800px;">
+            <span class="close" id="closeSlideSettings">&times;</span>
+            <h2>スライドレイアウト設定</h2>
+
+            <div class="settings-section">
+                <h3>概要ボックス</h3>
+                <div class="setting-item">
+                    <label for="overviewBoxWidth">幅 (%): </label>
+                    <input type="range" id="overviewBoxWidth" min="50" max="85" value="78" step="1">
+                    <span id="overviewBoxWidthValue">78</span>%
+                </div>
+                <div class="setting-item">
+                    <label for="overviewBoxTop">上からの位置 (px): </label>
+                    <input type="range" id="overviewBoxTop" min="100" max="200" value="140" step="5">
+                    <span id="overviewBoxTopValue">140</span>px
+                </div>
+                <div class="setting-item">
+                    <label for="overviewBoxFontSize">フォントサイズ (px): </label>
+                    <input type="range" id="overviewBoxFontSize" min="20" max="36" value="28" step="2">
+                    <span id="overviewBoxFontSizeValue">28</span>px
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3>要件セクション</h3>
+                <div class="setting-item">
+                    <label for="requirementsTop">上からの位置 (px): </label>
+                    <input type="range" id="requirementsTop" min="260" max="400" value="300" step="10">
+                    <span id="requirementsTopValue">300</span>px
+                </div>
+                <div class="setting-item">
+                    <label for="requirementsFontSize">フォントサイズ (px): </label>
+                    <input type="range" id="requirementsFontSize" min="12" max="20" value="16" step="1">
+                    <span id="requirementsFontSizeValue">16</span>px
+                </div>
+                <div class="setting-item">
+                    <label for="requirementsLineHeight">行間: </label>
+                    <input type="range" id="requirementsLineHeight" min="1.2" max="1.8" value="1.4" step="0.1">
+                    <span id="requirementsLineHeightValue">1.4</span>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3>関連条文バー</h3>
+                <div class="setting-item">
+                    <label for="relatedArticlesBottom">下からの位置 (px): </label>
+                    <input type="range" id="relatedArticlesBottom" min="40" max="80" value="50" step="5">
+                    <span id="relatedArticlesBottomValue">50</span>px
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3>全体</h3>
+                <div class="setting-item">
+                    <label for="slideScale">スケール: </label>
+                    <input type="range" id="slideScale" min="0.5" max="1.5" value="1.0" step="0.1">
+                    <span id="slideScaleValue">1.0</span>x
+                </div>
+            </div>
+
+            <div class="settings-actions">
+                <button id="applySlideSettings" class="btn btn-success">設定を適用</button>
+                <button id="resetSlideSettings" class="btn btn-secondary">デフォルトに戻す</button>
+                <button id="previewSlideSettings" class="btn btn-info">プレビュー</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js?v=7"></script>
+    <script src="slide_settings.js?v=1"></script>
 </body>
 </html>

@@ -726,3 +726,60 @@ header h1 {
         max-height: none;
     }
 }
+
+/* ===================================
+   Slide Settings Modal
+   =================================== */
+
+.settings-section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.settings-section h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.setting-item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.setting-item label {
+    min-width: 180px;
+    font-weight: 600;
+    color: #333;
+}
+
+.setting-item input[type="range"] {
+    flex: 1;
+    min-width: 200px;
+}
+
+.setting-item span {
+    min-width: 40px;
+    font-weight: 700;
+    color: #3498db;
+}
+
+.settings-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #ddd;
+}
+
+.settings-actions .btn {
+    min-width: 150px;
+}
