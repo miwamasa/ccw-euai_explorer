@@ -1083,6 +1083,9 @@ function navigateSlide(direction) {
 }
 
 function downloadSlides() {
+    // Load current slide settings
+    const settings = loadSlideSettings();
+
     const slidesHtml = `
 <!DOCTYPE html>
 <html lang="ja">
@@ -1123,6 +1126,8 @@ function downloadSlides() {
             background: linear-gradient(135deg, #F2F4F6 0%, #E9EDF0 100%);
             color: #111827;
             overflow: hidden;
+            transform: scale(${settings.slideScale});
+            transform-origin: top center;
         }
         .accent-stripe {
             position: absolute;
@@ -1160,7 +1165,7 @@ function downloadSlides() {
         }
         .section-label {
             position: absolute;
-            top: 140px;
+            top: ${settings.overviewBoxTop}px;
             left: 30px;
             display: flex;
             align-items: center;
@@ -1180,15 +1185,15 @@ function downloadSlides() {
         }
         .overview-box {
             position: absolute;
-            top: 140px;
+            top: ${settings.overviewBoxTop}px;
             left: 120px;
             right: 30px;
-            max-width: 60%;
+            max-width: ${settings.overviewBoxWidth}%;
             padding: 20px 30px;
             background: #FFFFFF;
             border-radius: 4px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            font-size: 28px;
+            font-size: ${settings.overviewBoxFontSize}px;
             font-weight: 700;
             line-height: 1.4;
             color: #111827;
@@ -1198,7 +1203,7 @@ function downloadSlides() {
         }
         .requirements-section {
             position: absolute;
-            top: 360px;
+            top: ${settings.requirementsTop}px;
             left: 30px;
             right: 30px;
             max-height: 500px;
@@ -1226,8 +1231,8 @@ function downloadSlides() {
         }
         .req-item {
             margin-bottom: 12px;
-            font-size: 16px;
-            line-height: 1.4;
+            font-size: ${settings.requirementsFontSize}px;
+            line-height: ${settings.requirementsLineHeight};
             color: #111827;
         }
         .req-id {
@@ -1262,7 +1267,7 @@ function downloadSlides() {
         }
         .requirements-list-full {
             position: absolute;
-            top: 180px;
+            top: ${settings.requirementsTop - 120}px;
             left: 30px;
             right: 30px;
             bottom: 60px;
@@ -1271,7 +1276,7 @@ function downloadSlides() {
         }
         .related-articles-bar {
             position: absolute;
-            bottom: 50px;
+            bottom: ${settings.relatedArticlesBottom}px;
             left: 30px;
             right: 30px;
             display: flex;
