@@ -873,55 +873,21 @@ function generateSlides() {
             return;
         }
 
-        // Title slide
+        // Main slide for each article (based on slide_specification.md)
+        const slideHtml = generateArticleSlide(article);
         slides.push({
             title: `${article.article_number}: ${article.title_ja}`,
-            content: `
-                <h2>${article.article_number}: ${article.title_ja}</h2>
-                <h3 style="color: #7f8c8d; font-style: italic;">${article.title_en || ''}</h3>
-                <div style="margin-top: 2rem;">
-                    <p><strong>カテゴリ:</strong> ${getCategoryLabel(article.category || 'general')}</p>
-                    <p><strong>リスクレベル:</strong> ${getRiskLabel(article.risk_level || 'general')}</p>
-                    <p><strong>スライドページ:</strong> ${(article.slide_pages || []).join(', ')}</p>
-                </div>
-            `
+            content: slideHtml,
+            article_id: article.article_id
         });
 
-        // Content slide - only if article text exists
-        if (article.article_text && (article.article_text.ja || article.article_text.en)) {
+        // Additional slide for requirements if they are many (more than 5)
+        if (article.requirements && article.requirements.length > 5) {
+            const additionalReqSlide = generateRequirementsSlide(article, 5);
             slides.push({
-                title: `${article.article_number}: 条文本文`,
-                content: `
-                    <h2>${article.article_number}: 条文本文</h2>
-                    <div style="margin-top: 2rem;">
-                        ${article.article_text.ja ? `
-                            <h3>日本語</h3>
-                            <p style="padding: 1rem; background: #f9f9f9; border-radius: 4px;">${article.article_text.ja}</p>
-                        ` : ''}
-                        ${article.article_text.en ? `
-                            <h3 style="margin-top: 1rem;">English</h3>
-                            <p style="padding: 1rem; background: #f9f9f9; border-radius: 4px;">${article.article_text.en}</p>
-                        ` : ''}
-                    </div>
-                `
-            });
-        }
-
-        // Requirements slide
-        if (article.requirements && article.requirements.length > 0) {
-            slides.push({
-                title: `${article.article_number}: 要件`,
-                content: `
-                    <h2>${article.article_number}: 要件 (${article.requirements.length}件)</h2>
-                    <div style="margin-top: 1rem;">
-                        ${article.requirements.slice(0, 3).map(req => `
-                            <div style="padding: 1rem; background: #fafafa; margin-bottom: 1rem; border-left: 4px solid #9b59b6; border-radius: 4px;">
-                                <strong>${req.req_id || 'N/A'}:</strong> ${req.description_ja || req.description_en || 'No description'}
-                            </div>
-                        `).join('')}
-                        ${article.requirements.length > 3 ? `<p style="color: #999; text-align: center;">... 他 ${article.requirements.length - 3}件</p>` : ''}
-                    </div>
-                `
+                title: `${article.article_number}: 要件（続き）`,
+                content: additionalReqSlide,
+                article_id: article.article_id
             });
         }
     });
@@ -935,6 +901,159 @@ function generateSlides() {
     displaySlide(currentSlideIndex);
     document.getElementById('slideModal').style.display = 'block';
     showNotification(`${slides.length}枚のスライドを生成しました`, 'success');
+}
+
+// Generate main article slide based on slide_specification.md
+function generateArticleSlide(article) {
+    // Prepare data
+    const headerTitleJa = `${article.article_number}：${article.title_ja}`;
+    const subheaderEn = article.title_en || '';
+    const overviewText = (article.summary && article.summary.ja) || (article.article_text && article.article_text.ja) || '';
+    const sectionLabel = '概要';
+
+    // Requirements list (up to 5 items)
+    const reqItems = (article.requirements || []).slice(0, 5);
+    const requirementsList = reqItems.map(req => {
+        let reqHtml = `<div class="req-item">`;
+        reqHtml += `<span class="req-id">${req.req_id || 'N/A'}:</span> `;
+        reqHtml += `<span class="req-desc">${req.description_ja || req.description_en || 'No description'}</span>`;
+
+        // Add verification and responsible party labels if available
+        const labels = [];
+        if (req.verification_method) labels.push(`<span class="req-label">[検証: ${req.verification_method}]</span>`);
+        if (req.responsible_party) labels.push(`<span class="req-label">[責任: ${req.responsible_party}]</span>`);
+        if (labels.length > 0) {
+            reqHtml += ` ${labels.join(' ')}`;
+        }
+
+        // Sub-items with indentation
+        if (req.sub_items && req.sub_items.length > 0) {
+            reqHtml += `<div class="sub-items">`;
+            req.sub_items.slice(0, 3).forEach(subItem => {
+                reqHtml += `<div class="sub-item">• ${subItem.description_ja || subItem.description_en || ''}</div>`;
+            });
+            if (req.sub_items.length > 3) {
+                reqHtml += `<div class="sub-item" style="color: #999;">... 他 ${req.sub_items.length - 3}件</div>`;
+            }
+            reqHtml += `</div>`;
+        }
+
+        reqHtml += `</div>`;
+        return reqHtml;
+    }).join('');
+
+    // Related articles bar
+    const relatedArticlesBar = (article.related_articles || []).slice(0, 4).map(rel => {
+        return `<span class="related-tag">${rel.article_number}: ${rel.description || ''}</span>`;
+    }).join('');
+
+    // Footnote with metadata
+    const metadata = article.metadata || {};
+    const footnote = `${metadata.author || 'AI法対応チーム'} — v${metadata.version || '1.0'} — ${metadata.updated_at ? new Date(metadata.updated_at).toLocaleDateString('ja-JP') : ''}`;
+
+    // Build slide HTML
+    return `
+        <div class="slide-16-9">
+            <!-- Accent decoration (top-right diagonal stripe) -->
+            <div class="accent-stripe"></div>
+
+            <!-- Header Title (Japanese) -->
+            <div class="header-title-ja">${headerTitleJa}</div>
+
+            <!-- Subheader (English) -->
+            <div class="subheader-en">${subheaderEn}</div>
+
+            <!-- Section Label (left side) -->
+            <div class="section-label">
+                <div class="blue-line"></div>
+                <div class="label-text">${sectionLabel}</div>
+            </div>
+
+            <!-- Overview Box (main summary) -->
+            <div class="overview-box">
+                ${overviewText}
+            </div>
+
+            <!-- Requirements List -->
+            ${reqItems.length > 0 ? `
+            <div class="requirements-section">
+                <div class="section-label-inline">
+                    <div class="blue-line-small"></div>
+                    <div class="label-text-small">代表的な要件</div>
+                </div>
+                <div class="requirements-list">
+                    ${requirementsList}
+                    ${article.requirements && article.requirements.length > 5 ?
+                        `<div class="req-more">... 他 ${article.requirements.length - 5}件（次スライドへ）</div>` : ''}
+                </div>
+            </div>
+            ` : ''}
+
+            <!-- Related Articles Bar -->
+            ${relatedArticlesBar ? `
+            <div class="related-articles-bar">
+                <span class="related-label">関連条文:</span>
+                ${relatedArticlesBar}
+            </div>
+            ` : ''}
+
+            <!-- Footnote -->
+            <div class="footnote">${footnote}</div>
+        </div>
+    `;
+}
+
+// Generate additional requirements slide
+function generateRequirementsSlide(article, startIndex) {
+    const headerTitleJa = `${article.article_number}：要件（続き）`;
+    const subheaderEn = article.title_en || '';
+
+    const reqItems = (article.requirements || []).slice(startIndex);
+    const requirementsList = reqItems.map(req => {
+        let reqHtml = `<div class="req-item">`;
+        reqHtml += `<span class="req-id">${req.req_id || 'N/A'}:</span> `;
+        reqHtml += `<span class="req-desc">${req.description_ja || req.description_en || 'No description'}</span>`;
+
+        const labels = [];
+        if (req.verification_method) labels.push(`<span class="req-label">[検証: ${req.verification_method}]</span>`);
+        if (req.responsible_party) labels.push(`<span class="req-label">[責任: ${req.responsible_party}]</span>`);
+        if (labels.length > 0) {
+            reqHtml += ` ${labels.join(' ')}`;
+        }
+
+        if (req.sub_items && req.sub_items.length > 0) {
+            reqHtml += `<div class="sub-items">`;
+            req.sub_items.forEach(subItem => {
+                reqHtml += `<div class="sub-item">• ${subItem.description_ja || subItem.description_en || ''}</div>`;
+            });
+            reqHtml += `</div>`;
+        }
+
+        reqHtml += `</div>`;
+        return reqHtml;
+    }).join('');
+
+    const metadata = article.metadata || {};
+    const footnote = `${metadata.author || 'AI法対応チーム'} — v${metadata.version || '1.0'} — ${metadata.updated_at ? new Date(metadata.updated_at).toLocaleDateString('ja-JP') : ''}`;
+
+    return `
+        <div class="slide-16-9">
+            <div class="accent-stripe"></div>
+            <div class="header-title-ja">${headerTitleJa}</div>
+            <div class="subheader-en">${subheaderEn}</div>
+
+            <div class="section-label">
+                <div class="blue-line"></div>
+                <div class="label-text">要件（続き）</div>
+            </div>
+
+            <div class="requirements-list-full">
+                ${requirementsList}
+            </div>
+
+            <div class="footnote">${footnote}</div>
+        </div>
+    `;
 }
 
 function displaySlide(index) {
@@ -971,39 +1090,247 @@ function downloadSlides() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>欧州AI法 スライド</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-        }
-        .slide {
-            width: 100%;
-            min-height: 100vh;
-            padding: 4rem;
             box-sizing: border-box;
-            page-break-after: always;
-            border-bottom: 2px solid #ddd;
         }
-        h2 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 0.5rem;
+        body {
+            font-family: 'Noto Sans JP', 'Noto Sans', 'Yu Gothic', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
         }
-        h3 {
-            color: #34495e;
+        .slide-wrapper {
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .slide-16-9 {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            max-width: 1920px;
+            max-height: 1080px;
+            margin: 0 auto;
+            padding: 30px 30px 20px 30px;
+            background: linear-gradient(135deg, #F2F4F6 0%, #E9EDF0 100%);
+            color: #111827;
+            overflow: hidden;
+        }
+        .accent-stripe {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 180px;
+            height: 30%;
+            background: #D1D5DB;
+            transform: skewY(-10deg);
+            transform-origin: top right;
+            border-radius: 0 0 0 20px;
+            opacity: 0.6;
+        }
+        .header-title-ja {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-size: 40px;
+            font-weight: 700;
+            color: #111827;
+            max-width: 70%;
+            line-height: 1.2;
+            z-index: 10;
+        }
+        .subheader-en {
+            position: absolute;
+            top: 85px;
+            left: 30px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #6B7280;
+            max-width: 70%;
+            line-height: 1.4;
+            z-index: 10;
+        }
+        .section-label {
+            position: absolute;
+            top: 140px;
+            left: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 10;
+        }
+        .blue-line {
+            width: 4px;
+            height: 60px;
+            background-color: #0B5FFF;
+            border-radius: 2px;
+        }
+        .label-text {
+            font-size: 18px;
+            font-weight: 600;
+            color: #0B5FFF;
+        }
+        .overview-box {
+            position: absolute;
+            top: 140px;
+            left: 120px;
+            right: 30px;
+            max-width: 60%;
+            padding: 20px 30px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #111827;
+            z-index: 10;
+            max-height: 180px;
+            overflow: hidden;
+        }
+        .requirements-section {
+            position: absolute;
+            top: 360px;
+            left: 30px;
+            right: 30px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .section-label-inline {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .blue-line-small {
+            width: 3px;
+            height: 24px;
+            background-color: #0B5FFF;
+            border-radius: 2px;
+        }
+        .label-text-small {
+            font-size: 18px;
+            font-weight: 600;
+            color: #0B5FFF;
+        }
+        .requirements-list {
+            padding-left: 20px;
+        }
+        .req-item {
+            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #111827;
+        }
+        .req-id {
+            font-weight: 700;
+            color: #0B5FFF;
+        }
+        .req-desc {
+            font-weight: 400;
+        }
+        .req-label {
+            font-size: 12px;
+            color: #6B7280;
+            margin-left: 8px;
+        }
+        .sub-items {
+            margin-top: 8px;
+            margin-left: 20px;
+            padding-left: 16px;
+            border-left: 2px solid #E5E7EB;
+        }
+        .sub-item {
+            font-size: 14px;
+            line-height: 1.4;
+            color: #4B5563;
+            margin-bottom: 6px;
+        }
+        .req-more {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #9CA3AF;
+            font-style: italic;
+        }
+        .requirements-list-full {
+            position: absolute;
+            top: 180px;
+            left: 30px;
+            right: 30px;
+            bottom: 60px;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .related-articles-bar {
+            position: absolute;
+            bottom: 50px;
+            left: 30px;
+            right: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            padding: 10px;
+            background: #F3F6FA;
+            border-radius: 4px;
+        }
+        .related-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #6B7280;
+            margin-right: 10px;
+        }
+        .related-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #E5E7EB;
+            color: #111827;
+            font-size: 11px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        .footnote {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            font-size: 10px;
+            font-style: italic;
+            color: #6B7280;
+            text-align: right;
         }
         @media print {
-            .slide {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .slide-wrapper {
                 page-break-after: always;
-                border: none;
+                break-after: page;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            .slide-16-9 {
+                width: 1920px;
+                height: 1080px;
+                max-width: none;
+                max-height: none;
             }
         }
     </style>
 </head>
 <body>
     ${slides.map(slide => `
-        <div class="slide">
+        <div class="slide-wrapper">
             ${slide.content}
         </div>
     `).join('')}
